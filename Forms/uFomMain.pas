@@ -29,7 +29,6 @@ type
     FDQRYProprioCNPJ_CPF: TWideStringField;
     DBEdit1: TDBEdit;
     LinkLabel4: TLinkLabel;
-    Label1: TLabel;
     AdvPanel1: TAdvPanel;
     AdvPanelStyler1: TAdvPanelStyler;
     CAIXA: TAdvGlowButton;
@@ -43,6 +42,8 @@ type
     AdvGlowButton7: TAdvGlowButton;
     AdvGlowButton8: TAdvGlowButton;
     AdvGlowButton9: TAdvGlowButton;
+    Label1: TLabel;
+    LinkLabel5: TLinkLabel;
     procedure AdvGlowButton3Click(Sender: TObject);
     procedure AdvGlowButton1Click(Sender: TObject);
     procedure AdvGlowButton2Click(Sender: TObject);
@@ -194,7 +195,7 @@ end;
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
  //ShowModalForm(TFormLogin, FormLogin);
-  LinkLabel1.caption:=DBEdit1.Text;
+  LinkLabel4.caption:=DBEdit1.Text;
 end;
 
 
@@ -218,7 +219,7 @@ end;
 
 end;
 
-procedure TFormMain.image4Click(Sender: TObject);
+Procedure TFormMain.image4Click(Sender: TObject);
 begin
  WindowState := wsNormal;
 

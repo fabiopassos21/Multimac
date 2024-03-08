@@ -1,9 +1,8 @@
 object FormMain: TFormMain
   Left = 250
   Top = 200
-  BorderStyle = bsSingle
-  ClientHeight = 1071
-  ClientWidth = 1910
+  ClientHeight = 1061
+  ClientWidth = 1900
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -31,9 +30,9 @@ object FormMain: TFormMain
   TextHeight = 13
   object fp: TImage
     Left = 0
-    Top = 121
-    Width = 1910
-    Height = 913
+    Top = 171
+    Width = 1900
+    Height = 853
     Align = alClient
     Picture.Data = {
       0A544A504547496D6167654A360000FFD8FFE000104A46494600010101004800
@@ -473,6 +472,8 @@ object FormMain: TFormMain
       1A9A0F22CF86A8D1D16A48E9A8F0235A45C79A2351914FFFD9}
     Stretch = True
     ExplicitLeft = 2
+    ExplicitTop = 177
+    ExplicitHeight = 847
   end
   object TimePicker1: TTimePicker
     Left = 1384
@@ -490,8 +491,8 @@ object FormMain: TFormMain
   end
   object AdvPanel2: TAdvPanel
     Left = 0
-    Top = 1034
-    Width = 1910
+    Top = 1024
+    Width = 1900
     Height = 37
     Align = alBottom
     BorderStyle = bsSingle
@@ -529,8 +530,6 @@ object FormMain: TFormMain
     StatusBar.Color = clWhite
     StatusBar.GradientDirection = gdVertical
     Text = ''
-    ExplicitTop = 1024
-    ExplicitWidth = 1900
     FullHeight = 200
     object Label1: TLabel
       Left = 261
@@ -547,7 +546,7 @@ object FormMain: TFormMain
       ExplicitHeight = 25
     end
     object LinkLabel1: TLinkLabel
-      Left = 706
+      Left = 695
       Top = 0
       Width = 4
       Height = 33
@@ -595,7 +594,7 @@ object FormMain: TFormMain
       ExplicitHeight = 29
     end
     object LinkLabel4: TLinkLabel
-      Left = 702
+      Left = 691
       Top = 0
       Width = 4
       Height = 33
@@ -607,18 +606,13 @@ object FormMain: TFormMain
       Font.Style = []
       ParentFont = False
       TabOrder = 3
-      ExplicitLeft = 691
       ExplicitHeight = 4
     end
     object LinkLabel5: TLinkLabel
-      AlignWithMargins = True
-      Left = 586
+      Left = 583
       Top = 0
       Width = 108
       Height = 33
-      Margins.Top = 0
-      Margins.Right = 8
-      Margins.Bottom = 0
       Align = alLeft
       Caption = '       CNPJ:'
       Font.Charset = DEFAULT_CHARSET
@@ -628,7 +622,6 @@ object FormMain: TFormMain
       Font.Style = []
       ParentFont = False
       TabOrder = 4
-      ExplicitLeft = 583
       ExplicitHeight = 29
     end
   end
@@ -645,8 +638,8 @@ object FormMain: TFormMain
   object AdvPanel1: TAdvPanel
     Left = 0
     Top = 0
-    Width = 1910
-    Height = 121
+    Width = 1900
+    Height = 171
     Align = alTop
     BorderStyle = bsSingle
     Color = clWhite
@@ -654,9 +647,9 @@ object FormMain: TFormMain
     UseDockManager = True
     Version = '2.6.3.4'
     BackgroundPosition = bpStretched
-    BorderColor = clMoneyGreen
+    BorderColor = clCream
     BorderShadow = True
-    BorderWidth = 1
+    BorderWidth = 2
     Caption.Color = clWhite
     Caption.ColorTo = clNone
     Caption.Font.Charset = DEFAULT_CHARSET
@@ -683,17 +676,17 @@ object FormMain: TFormMain
     StatusBar.Color = clWhite
     StatusBar.GradientDirection = gdVertical
     Text = ''
-    ExplicitLeft = 8
+    ExplicitLeft = 2
     ExplicitTop = -6
     FullHeight = 200
     object CAIXA: TAdvGlowButton
       AlignWithMargins = True
-      Left = 1765
-      Top = 21
+      Left = 1754
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alRight
@@ -796,12 +789,12 @@ object FormMain: TFormMain
     end
     object AdvGlowButton1: TAdvGlowButton
       AlignWithMargins = True
-      Left = 11
-      Top = 21
+      Left = 12
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -884,16 +877,15 @@ object FormMain: TFormMain
       UIStyle = tsWhidbey
       ExplicitLeft = 28
       ExplicitTop = 44
-      ExplicitHeight = 93
     end
     object AdvGlowButton2: TAdvGlowButton
       AlignWithMargins = True
-      Left = 1465
-      Top = 21
+      Left = 1454
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alRight
@@ -966,12 +958,12 @@ object FormMain: TFormMain
     end
     object AdvGlowButton3: TAdvGlowButton
       AlignWithMargins = True
-      Left = 911
-      Top = 21
+      Left = 912
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -1077,18 +1069,17 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 912
       ExplicitTop = 22
       ExplicitHeight = 96
     end
     object AdvGlowButton4: TAdvGlowButton
       AlignWithMargins = True
-      Left = 161
-      Top = 21
+      Left = 162
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -1180,18 +1171,17 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 162
       ExplicitTop = 19
       ExplicitHeight = 96
     end
     object AdvGlowButton5: TAdvGlowButton
       AlignWithMargins = True
-      Left = 1615
-      Top = 21
+      Left = 1604
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alRight
@@ -1270,12 +1260,12 @@ object FormMain: TFormMain
     end
     object AdvGlowButton6: TAdvGlowButton
       AlignWithMargins = True
-      Left = 761
-      Top = 21
+      Left = 762
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -1373,12 +1363,12 @@ object FormMain: TFormMain
     end
     object AdvGlowButton7: TAdvGlowButton
       AlignWithMargins = True
-      Left = 611
-      Top = 21
+      Left = 612
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -1461,12 +1451,12 @@ object FormMain: TFormMain
     end
     object AdvGlowButton8: TAdvGlowButton
       AlignWithMargins = True
-      Left = 311
-      Top = 21
+      Left = 312
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -1553,18 +1543,17 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 312
       ExplicitTop = 22
       ExplicitHeight = 96
     end
     object AdvGlowButton9: TAdvGlowButton
       AlignWithMargins = True
-      Left = 461
-      Top = 21
+      Left = 462
+      Top = 59
       Width = 125
-      Height = 85
+      Height = 93
       Margins.Left = 10
-      Margins.Top = 20
+      Margins.Top = 10
       Margins.Right = 15
       Margins.Bottom = 10
       Align = alLeft
@@ -1646,6 +1635,26 @@ object FormMain: TFormMain
       ExplicitLeft = 658
       ExplicitTop = 12
       ExplicitHeight = 146
+    end
+    object StatusBar1: TStatusBar
+      Left = 2
+      Top = 162
+      Width = 1892
+      Height = 3
+      Color = clBlack
+      Panels = <>
+      ExplicitTop = 168
+    end
+    object CurvyPanel1: TCurvyPanel
+      Left = 2
+      Top = 2
+      Width = 1892
+      Height = 47
+      Align = alTop
+      BorderColor = clSilver
+      BorderWidth = 3
+      Caption = ''
+      TabOrder = 11
     end
   end
   object AdvOfficeStatusBarOfficeStyler1: TAdvOfficeStatusBarOfficeStyler
@@ -1986,7 +1995,6 @@ object FormMain: TFormMain
     Top = 272
   end
   object FDQRYProprio: TFDQuery
-    Active = True
     Connection = dmDados.fdCon
     SQL.Strings = (
       'select * from proprio')

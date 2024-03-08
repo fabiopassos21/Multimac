@@ -13,43 +13,14 @@ uses
   FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Vcl.StdCtrls, Vcl.Mask,
   Vcl.DBCtrls, Vcl.Buttons, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
   AdvGlassButton, Vcl.ExtCtrls, Vcl.Imaging.pngimage, CurvyControls, AdvPanel,
-  RTFLabel,uFormLogin, Vcl.ComCtrls, Vcl.Imaging.jpeg, Vcl.WinXPickers;
+  RTFLabel,uFormLogin, Vcl.ComCtrls, Vcl.Imaging.jpeg, Vcl.WinXPickers,shellapi;
 
 type
   TFormMain = class(TAdvToolBarForm)
     AdvPanel2: TAdvPanel;
-    AdvPanel1: TAdvPanel;
-    AdvOfficeStatusBar1: TAdvOfficeStatusBar;
     AdvOfficeStatusBarOfficeStyler1: TAdvOfficeStatusBarOfficeStyler;
     AdvToolBarOfficeStyler1: TAdvToolBarOfficeStyler;
-    AdvToolBarPager1: TAdvToolBarPager;
-    AdvPage1: TAdvPage;
-    AdvToolBar1: TAdvToolBar;
-    AdvGlowButton2: TAdvGlowButton;
-    AdvGlowButton1: TAdvGlowButton;
-    AdvGlowButton3: TAdvGlowButton;
-    btnCadastroUsuario: TAdvGlowButton;
-    AdvToolBar2: TAdvToolBar;
-    btnCadastroFornecedor: TAdvGlowButton;
-    btnCadastroProduto: TAdvGlowButton;
-    AdvToolBar4: TAdvToolBar;
-    AdvGlowButton4: TAdvGlowButton;
-    AdvToolBar6: TAdvToolBar;
-    AdvGlowButton5: TAdvGlowButton;
-    AdvToolBar7: TAdvToolBar;
-    AdvGlowButton7: TAdvGlowButton;
-    AdvPage4: TAdvPage;
-    AdvToolBar3: TAdvToolBar;
-    btnFiltroClientes: TAdvGlowButton;
-    btnFornecedor: TAdvGlowButton;
-    btnProdutos: TAdvGlowButton;
-    btnFiltroVendas: TAdvGlowButton;
-    btnFiltroUsuários: TAdvGlowButton;
-    AdvPage2: TAdvPage;
-    AdvToolBar5: TAdvToolBar;
-    AdvGlowButton6: TAdvGlowButton;
-    AdvShapeButton1: TAdvShapeButton;
-    Image1: TImage;
+    fp: TImage;
     LinkLabel1: TLinkLabel;
     LinkLabel2: TLinkLabel;
     LinkLabel3: TLinkLabel;
@@ -58,8 +29,23 @@ type
     FDQRYProprioCNPJ_CPF: TWideStringField;
     DBEdit1: TDBEdit;
     LinkLabel4: TLinkLabel;
+    AdvPanel1: TAdvPanel;
+    AdvPanelStyler1: TAdvPanelStyler;
+    CAIXA: TAdvGlowButton;
+    AdvGlowButton1: TAdvGlowButton;
     TimePicker1: TTimePicker;
+    AdvGlowButton2: TAdvGlowButton;
+    AdvGlowButton3: TAdvGlowButton;
+    AdvGlowButton4: TAdvGlowButton;
+    AdvGlowButton5: TAdvGlowButton;
+    AdvGlowButton6: TAdvGlowButton;
+    AdvGlowButton7: TAdvGlowButton;
+    AdvGlowButton8: TAdvGlowButton;
+    AdvGlowButton9: TAdvGlowButton;
+    StatusBar1: TStatusBar;
+    CurvyPanel1: TCurvyPanel;
     Label1: TLabel;
+    LinkLabel5: TLinkLabel;
     procedure AdvGlowButton3Click(Sender: TObject);
     procedure AdvGlowButton1Click(Sender: TObject);
     procedure AdvGlowButton2Click(Sender: TObject);
@@ -72,11 +58,15 @@ type
     procedure btnFiltroVendasClick(Sender: TObject);
     procedure btnFiltroUsuáriosClick(Sender: TObject);
     procedure btnCadastroUsuarioClick(Sender: TObject);
-    procedure AdvGlowButton7Click(Sender: TObject);
     procedure AdvGlowButton8Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure image4Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure AdvShapeButton1Click(Sender: TObject);
+    procedure AdvGlowButton4Click(Sender: TObject);
+    procedure AdvGlowButton5Click(Sender: TObject);
+    procedure CAIXAClick(Sender: TObject);
+    procedure AdvGlowButton9Click(Sender: TObject);
 
 
 
@@ -92,46 +82,70 @@ type
 var
   FormMain: TFormMain;
    HorarioLimite:TDateTime;
+   url:string;
 implementation
 
 {$R *.dfm}
 
 uses uFormCadastroVenda, uBiblioteca, uFormFiltroVendas, uFormFiltroUsuario,
   uFormCadastroUsuario,  uFormProprio, uFormPreProprio,
-  UFormFiltroVendaNFE, uDmDados;
+  UFormFiltroVendaNFE, uDmDados, UFormAbertura;
 
 
 procedure TFormMain.AdvGlowButton1Click(Sender: TObject);
 begin
-  ShowModalForm(TFormCadastroCidade, FormCadastroCidade);
+  ShowForm(TFormAberturaCaixa, formaberturacaixa);
 end;
 
 procedure TFormMain.AdvGlowButton2Click(Sender: TObject);
 begin
-  ShowModalForm(TFormCadastroEstado, FormCadastroEstado);
+  showform(TFormCadastroVenda, formcadastrovenda);
 end;
 
 procedure TFormMain.AdvGlowButton3Click(Sender: TObject);
 begin
-  ShowModalForm(TFormCadastroCliente, FormCadastroCliente);
+  showform(TFormFiltroClientes, FormFiltroClientes);
+end;
+
+procedure TFormMain.AdvGlowButton4Click(Sender: TObject);
+begin
+     showform(TFormFiltroProdutos, formfiltroprodutos);
+end;
+
+procedure TFormMain.AdvGlowButton5Click(Sender: TObject);
+begin
+      ShowForm(tformfiltrovendanfe,formfiltrovendanfe);
 end;
 
 procedure TFormMain.AdvGlowButton6Click(Sender: TObject);
 begin
-  ShowForm(TFormCadastroVenda, formcadastrovenda);
-end;
-
-procedure TFormMain.AdvGlowButton7Click(Sender: TObject);
-begin
-ShowForm(TFormPreProprio,FormPreProprio);
+ ShowForm(TFormFiltroUsuario,formfiltrousuario);
 end;
 
 procedure TFormMain.AdvGlowButton8Click(Sender: TObject);
 begin
-   ShowForm(tFormFiltroVendaNFE,FormFiltroVendaNFE);
+   ShowForm(TFormEtiqueta,formetiqueta);
 end;
 
 
+
+procedure TFormMain.AdvGlowButton9Click(Sender: TObject);
+begin
+
+   showform(TFormFiltroFornecedores,FormFiltroFornecedores);
+
+
+end;
+
+procedure TFormMain.AdvShapeButton1Click(Sender: TObject);
+begin
+
+ url:='https://api.whatsapp.com/send?phone=551438788380&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento%20para%20minha%20empresa.%20';
+ shellexecute(0,'open',PChar(url),nil,nil,SW_NORMAL);
+
+
+
+end;
 
 procedure TFormMain.btnCadastroFornecedorClick(Sender: TObject);
 begin
@@ -175,10 +189,15 @@ end;
 
 
 
+procedure TFormMain.CAIXAClick(Sender: TObject);
+begin
+ showform(TFormPreProprio,FormPreProprio);
+end;
+
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
- ShowModalForm(TFormLogin, FormLogin);
-  LinkLabel1.caption:=DBEdit1.Text;
+ //ShowModalForm(TFormLogin, FormLogin);
+  LinkLabel4.caption:=DBEdit1.Text;
 end;
 
 
@@ -189,8 +208,12 @@ procedure TFormMain.FormShow(Sender: TObject);
 
 begin
 HorarioLimite := EncodeTime(18, 0, 0, 0);
-if TimePicker1.Time>HorarioLimite then begin
-  Label1.Caption:='(14)3879-8010'
+if TimePicker1.Time > HorarioLimite then begin
+  Label1.Caption:='(14)99727-1534';
+end
+ELSE
+begin
+  label1.Caption:='(14)3879-8010';
 end;
 
 
