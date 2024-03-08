@@ -1,0 +1,177 @@
+unit UFormEtiqueta;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, ACBrBase, ACBrETQ,ACBrDevice,  ACBrETQZplII,
+  Vcl.StdCtrls,ACBrETQClass, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Vcl.Mask, Vcl.DBCtrls,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.Buttons;
+
+type
+  TFormEtiqueta = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    bEtqSimples: TButton;
+    edAvanco: TEdit;
+    FDQuery1: TFDQuery;
+    DataSource1: TDataSource;
+    FDQuery1CAMINHO_IMPRESSORA: TStringField;
+    DBEdit1: TDBEdit;
+    btn_salvar: TSpeedButton;
+    FDTransaction: TFDTransaction;
+    Label2: TLabel;
+    Label3: TLabel;
+    EDTQtd: TEdit;
+    ACBrETQ: TACBrETQ;
+    FDQryProduto: TFDQuery;
+    DataSource2: TDataSource;
+    FDQryProdutoID_PRODUTO: TIntegerField;
+    FDQryProdutoDESCRICAO: TWideStringField;
+    FDQryProdutoQTD: TSingleField;
+    FDQryProdutoCUSTO: TSingleField;
+    FDQryProdutoV_UNITARIO: TSingleField;
+    FDQryProdutoUNIDADE: TWideStringField;
+    FDQryProdutoPESO_LIQUIDO: TSingleField;
+    FDQryProdutoPESO_BRUTO: TSingleField;
+    FDQryProdutoFABRICANTE: TWideStringField;
+    FDQryProdutoMARCA_MODELO: TWideStringField;
+    FDQryProdutoID_FORNECEDOR: TIntegerField;
+    FDQryProdutoDT_EXCLUIDO: TDateField;
+    FDQryProdutoCODIGO_AUX: TWideStringField;
+    btn_editar: TSpeedButton;
+    procedure bEtqSimplesClick(Sender: TObject);
+    procedure  ConfigurarACBrETQ ;
+    procedure btn_salvarClick(Sender: TObject);
+    procedure ImprimirEtiquetaComCopiasEAvanco;
+    procedure FormCreate(Sender: TObject);
+    procedure btn_editarClick(Sender: TObject);
+    private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormEtiqueta: TFormEtiqueta;
+
+implementation
+
+{$R *.dfm}
+
+uses uDmDados, uBiblioteca;
+
+procedure TFormEtiqueta.bEtqSimplesClick(Sender: TObject);
+begin
+ ConfigurarACBrETQ;
+      with ACBrETQ do
+  begin
+    if (Modelo = etqZPLII) then
+    begin
+      ImprimirCaixa(3,3,90,5,5,0, 4);    //6 elemento  inversor
+      ImprimirTexto(orNormal, 'T', 10, 10, 3, 3,FDQryProduto.FieldByName('DESCRICAO').value , 0, True);        //
+      ImprimirTexto(orNormal, 'S', 10, 10, 8, 3,'Categoria');    // FDQryProduto.FieldByName('MARCA_MODELO').value
+       ImprimirBarras(orNormal, barEAN13, 2, 2, 13, 5, FDQryProduto.FieldByName('ID_PRODUTO').value, 10, becSIM);// ;
+      ImprimirCaixa(13,32,56,17,1,1);
+      ImprimirTexto(orNormal, 'G', 40, 80, 18, 35, 'R$');
+      ImprimirTexto(orNormal, 'G', 55, 100, 15, 50,FDQryProduto.FieldByName('V_UNITARIO').Value);        //FDQryProduto.FieldByName('V_UNITARIO').value
+    end
+    else if (Modelo = etqEscLabel) then
+    begin
+      DefinirCor(clBlue, 255, clYellow, 200);
+      ImprimirCaixa(2,1,85,7,7,0,4);
+      DefinirCorPadrao;
+      ImprimirTexto(orNormal, 'T', 9, 9, 3, 3, 'RA«√O PARA C√ES ¡…Õ”⁄ 5KG', 0, True);
+      ImprimirTexto(orNormal, 'S', 9, 7, 9, 3, 'M…DIO PORTE');
+      DefinirCor(clRed, 255, clWhite, 0);
+      ImprimirBarras(orNormal, barEAN13, 2, 2, 15, 5, '7896003701685', 10, becSIM);
+      DefinirCor(clBlack, 255, clGreen, 150);
+      ImprimirCaixa(13,32,56,17,1,1);
+      DefinirCorPadrao;
+      ImprimirTexto(orNormal, 'G', 40, 80, 18, 35, 'R$');
+      ImprimirTexto(orNormal, 'G', 55, 100, 15, 50, '20,59');
+    end
+    else
+    begin
+      DefinirCor(clBlue, 0, 0, 0);
+      ImprimirTexto(orNormal, 2, 2, 2, 3, 3, 'RA«√O PARA C√ES ¡…Õ”⁄ 5KG', 0, True);
+      ImprimirTexto(orNormal, 2, 2, 1, 8, 3, 'M…DIO PORTE');
+      ImprimirBarras(orNormal, barEAN13, 2, 2, 13, 5, '7896003701685', 10, becSIM);
+      ImprimirCaixa(10,32,56,13,1,1);
+      ImprimirTexto(orNormal, 3, 3, 2, 16, 35, 'R$');
+      ImprimirTexto(orNormal, 3, 4, 4, 12, 50, '20,59');
+    end;
+
+    ImprimirEtiquetaComCopiasEAvanco;
+    Desativar;
+    ShowMessage('Impressao Feita');
+  end;
+end;
+
+
+
+
+procedure TFormEtiqueta.btn_editarClick(Sender: TObject);
+begin
+DBEdit1.Enabled:=true;
+
+
+end;
+
+procedure TFormEtiqueta.btn_salvarClick(Sender: TObject);
+begin
+if FDQuery1.State in [dsInsert,dsEdit] then
+begin
+
+
+ FDTransaction.StartTransaction;
+ FDQuery1.Post;
+ FDTransaction.CommitRetaining;
+ dbedit1.enabled:=false;
+ MsgInformacao('Salvo o Caminho com Sucesso !');
+ end
+ else
+ begin
+ ShowMessage('Nao foi feito nenhuma alteracao');
+ end;
+  end;
+
+
+
+
+
+procedure TFormEtiqueta.ConfigurarACBrETQ;
+begin
+
+  with ACBrETQ do
+  begin
+     Desativar;
+     Modelo := TACBrETQModelo(etqZPLII);
+     Porta := DBEdit1.text;
+     Unidade := etqMilimetros; //etqDecimoDeMilimetros;
+     MargemEsquerda := StrToIntDef(edAvanco.Text, 0);
+     Ativar;
+
+  end;
+
+
+
+end;
+
+
+procedure TFormEtiqueta.FormCreate(Sender: TObject);
+begin
+FDQuery1.Open();
+FDQryProduto.Open();
+FDQuery1.FetchAll;
+FDQryProduto.FetchAll;
+end;
+
+procedure TFormEtiqueta.ImprimirEtiquetaComCopiasEAvanco;
+begin
+ ACBrETQ.Imprimir(StrToIntDef(EDTQtd.Text, 1), StrToIntDef(edAvanco.Text, 0));
+end;
+
+end.

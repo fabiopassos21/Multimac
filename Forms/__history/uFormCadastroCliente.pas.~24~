@@ -1,0 +1,180 @@
+unit uFormCadastroCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFormCadastroPai, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.Client, Data.DB, FireDAC.Comp.DataSet, Vcl.StdCtrls, Vcl.Buttons,
+  Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Mask, uLookup, ACBrBase, ACBrSocket, ACBrCEP;
+
+type
+  TFormCadastroCliente = class(TFormCadastroPai)
+    fdQryCadastroID_CLIENTE: TIntegerField;
+    fdQryCadastroRAZAO_SOCIAL: TWideStringField;
+    fdQryCadastroFANTASIA: TWideStringField;
+    fdQryCadastroCPF_CNPJ: TWideStringField;
+    fdQryCadastroTIPO_FJ: TWideStringField;
+    fdQryCadastroNOME: TWideStringField;
+    fdQryCadastroEMAIL: TWideStringField;
+    fdQryCadastroSITE: TWideStringField;
+    fdQryCadastroENDERECO: TWideStringField;
+    fdQryCadastroCOMPLEMENTO: TWideStringField;
+    fdQryCadastroNUMERO: TWideStringField;
+    fdQryCadastroBAIRRO: TWideStringField;
+    fdQryCadastroIE: TWideStringField;
+    fdQryCadastroIM: TWideStringField;
+    fdQryCadastroDT_EXCLUIDO: TDateField;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    Label2: TLabel;
+    edtRazaoSocial: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    edtTipoFJ: TDBComboBox;
+    Label6: TLabel;
+    DBEdit5: TDBEdit;
+    Label7: TLabel;
+    DBEdit6: TDBEdit;
+    Label8: TLabel;
+    DBEdit7: TDBEdit;
+    Label9: TLabel;
+    DBEdit8: TDBEdit;
+    Label10: TLabel;
+    DBEdit9: TDBEdit;
+    Label11: TLabel;
+    DBEdit10: TDBEdit;
+    Label12: TLabel;
+    DBEdit11: TDBEdit;
+    fdQryCadastroID_CIDADE: TIntegerField;
+    DBLookupComboBox1: TDBLookupComboBox;
+    DBLookupComboBox2: TDBLookupComboBox;
+    Label13: TLabel;
+    Label14: TLabel;
+    fdQryCadastroID_ESTADO: TIntegerField;
+    fdQryCadastroCEP: TIntegerField;
+    bBuscarCEP: TButton;
+    edCEP: TEdit;
+    Memo1: TMemo;
+    ACBrCEP1: TACBrCEP;
+    procedure FormShow(Sender: TObject);
+    procedure fdQryCadastroBeforeInsert(DataSet: TDataSet);
+    procedure fdQryCadastroBeforeEdit(DataSet: TDataSet);
+    procedure bBuscarCEPClick(Sender: TObject);
+
+    procedure ACBrCEP1AntesAbrirHTTP(var AURL: string);
+    procedure ACBrCEP1BuscaEfetuada(Sender: TObject);
+
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCadastroCliente: TFormCadastroCliente;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TFormCadastroCliente.ACBrCEP1AntesAbrirHTTP(var AURL: string);
+begin
+  inherited;
+Memo1.Lines.Clear;
+  Memo1.Lines.Add('Efetuando consulta HTTP em:' ) ;
+  Memo1.Lines.Add( AURL );
+  Memo1.Lines.Add( '' );
+end;
+
+
+
+procedure TFormCadastroCliente.ACBrCEP1BuscaEfetuada(Sender: TObject);
+var
+  I : Integer ;
+  Logradouro,bairro,municipio,uf:string;
+begin
+  if ACBrCEP1.Enderecos.Count < 1 then
+     Memo1.Lines.Add( 'Nenhum Endereço encontrado' )
+  else
+   begin
+     Memo1.Lines.Add( IntToStr(ACBrCEP1.Enderecos.Count) + ' Endereço(s) encontrado(s)');
+     Memo1.Lines.Add('');
+
+     For I := 0 to ACBrCEP1.Enderecos.Count-1 do
+     begin
+       with ACBrCEP1.Enderecos[I] do
+       begin
+          Memo1.Lines.Add('CEP: '+CEP );
+          Memo1.Lines.Add('Logradouro: '+Tipo_Logradouro+ ' ' +Logradouro );
+          DBEdit8.Text:=Logradouro;
+          Memo1.Lines.Add('Complemento: '+Complemento );
+          Memo1.Lines.Add('Bairro: '+Bairro );
+          Memo1.Lines.Add('Municipio: '+Municipio + ' - IBGE: '+IBGE_Municipio);
+          Memo1.Lines.Add('UF: '+UF + ' - IBGE: '+IBGE_UF);
+          Memo1.Lines.Add( StringOfChar('-',20) );
+
+       end ;
+     end ;
+   end ;
+
+  Memo1.Lines.Add('');
+  Memo1.Lines.Add('Resposta HTTP:');
+  Memo1.Lines.AddStrings( ACBrCEP1.RespHTTP );
+
+end;
+
+procedure TFormCadastroCliente.bBuscarCEPClick(Sender: TObject);
+begin
+  inherited;
+
+
+
+
+
+  try
+     ACBrCEP1.BuscarPorCEP(edCEP.Text);
+  except
+     On E : Exception do
+     begin
+        Memo1.Lines.Add(E.Message);
+     end ;
+  end ;
+end;
+
+
+procedure TFormCadastroCliente.fdQryCadastroBeforeEdit(DataSet: TDataSet);
+begin
+  inherited;
+  if Self.Visible then
+    edtRazaoSocial.SetFocus;
+end;
+
+procedure TFormCadastroCliente.fdQryCadastroBeforeInsert(DataSet: TDataSet);
+begin
+  inherited;
+  if Self.Visible then
+    edtRazaoSocial.SetFocus;
+end;
+
+procedure TFormCadastroCliente.FormShow(Sender: TObject);
+begin
+  inherited;
+  Lookup.fdQryEstados.Open();
+  Lookup.fdQryEstados.FetchAll;
+
+  Lookup.fdQryCidades.Open();
+  Lookup.fdQryCidades.FetchAll;
+
+  edtRazaoSocial.SetFocus;
+end;
+
+end.

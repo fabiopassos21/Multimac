@@ -1,0 +1,407 @@
+inherited FormFiltroFornecedores: TFormFiltroFornecedores
+  Caption = 'Filtro de fornecedores'
+  ClientHeight = 370
+  ClientWidth = 936
+  FormStyle = fsMDIChild
+  Visible = True
+  WindowState = wsMaximized
+  ExplicitWidth = 952
+  ExplicitHeight = 409
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    Width = 936
+    ExplicitTop = -6
+    ExplicitWidth = 936
+    inherited Label1: TLabel
+      Width = 113
+      Height = 25
+      Caption = 'Razao social'
+      Font.Height = -21
+      ParentFont = False
+      ExplicitWidth = 113
+      ExplicitHeight = 25
+    end
+    object Label2: TLabel [1]
+      Left = 287
+      Top = 16
+      Width = 48
+      Height = 25
+      Caption = 'CNPJ'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    inherited edtFiltro: TEdit
+      Top = 47
+      Width = 273
+      ExplicitTop = 47
+      ExplicitWidth = 273
+    end
+    inherited btnFiltro: TButton
+      Left = 763
+      Top = 52
+      Caption = 'Filtro'
+      Visible = False
+      OnClick = btnFiltroClick
+      ExplicitLeft = 763
+      ExplicitTop = 52
+    end
+    inherited Panel2: TPanel
+      Left = 844
+      ExplicitLeft = 844
+      inherited Button1: TButton
+        Left = 16
+        Top = 20
+        Visible = False
+        ExplicitLeft = 16
+        ExplicitTop = 20
+      end
+      object AdvGlowButton4: TAdvGlowButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 10
+        Width = 71
+        Height = 75
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Right = 10
+        Margins.Bottom = 10
+        Align = alClient
+        NotesFont.Charset = DEFAULT_CHARSET
+        NotesFont.Color = clWindowText
+        NotesFont.Height = -11
+        NotesFont.Name = 'Tahoma'
+        NotesFont.Style = []
+        Picture.Data = {
+          89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+          DE000000097048597300000B1300000B1301009A9C180000020F49444154789C
+          E59BCB4E03310C45B3429D1F435D944F4502B1A8F832C40A128AA56A1E992473
+          6D5FAB57F2AECAF89C026D129C523DCFB9DE734D3BAF63CC53AED75C2FA30B14
+          F8AF5C3FB93E532C0905FE23DD7AFF4E0312EEE1A5A248B88797EA92B0061F45
+          C21A7C97841A3CBB841A7C9384167856092DF055093DF06C127AE057258CC0B3
+          4818815F48781B5C40EA9AEBA40CBA96D3FFB38FF45ED80F59F4FA4940F57C42
+          2F6821010E8F5E5853821A3CFA011A12D4E1D10F424A3083473F1021C11C1EFD
+          E02312DCE0D10D8C4870874737D22381061EDD508B043A7874633509B4F0E806
+          D724D0C3A31B9D14D634DB94212584839720B6A357D01A1EDBF1BF20DEBD70EF
+          FC3C5E1228E025D612A8E025561228E125DA12A8E1255A1242C04BD01242C14B
+          501242C297200530DC407545E357208C04CD3F82F4122C3E066925587E11A293
+          E0F155984682E766C85D02C376D84DC2431F88208FB1186EA0BAA27186174682
+          E60126BD048BD35B5A099647D774123CCEED6924785E5AB84B60B8B17193C000
+          8FEEA55902133CBAA75D098CF0E8DE362530C3A37B5C4888008FEE75422F68B9
+          23834A78F87F973F3A30E17969717460E2220B8D8ECC30DCD88C8ECC5CE60BF5
+          0E4D31C04B7A87A616F092D6B139267849EBD8DC26BC646F7092115EB23738B9
+          0B2FD91A9D6586976C8DCE36C34BE6C3D311E025F3E1E96E78C939DD3E2B23C1
+          4B4ACFA5F773ED45BFFF9EA0456BBDBC240000000049454E44AE426082}
+        Rounded = True
+        TabOrder = 1
+        Appearance.BorderColor = 10070188
+        Appearance.BorderColorHot = 10079963
+        Appearance.BorderColorDown = 4548219
+        Appearance.BorderColorChecked = 13744549
+        Appearance.Color = clWhite
+        Appearance.ColorTo = 14675440
+        Appearance.ColorChecked = 11918331
+        Appearance.ColorCheckedTo = 7915518
+        Appearance.ColorDisabled = 15921906
+        Appearance.ColorDisabledTo = 15921906
+        Appearance.ColorDown = 7778289
+        Appearance.ColorDownTo = 4296947
+        Appearance.ColorHot = 15465983
+        Appearance.ColorHotTo = 11332863
+        Appearance.ColorMirror = 14675440
+        Appearance.ColorMirrorTo = 14675440
+        Appearance.ColorMirrorHot = 5888767
+        Appearance.ColorMirrorHotTo = 10807807
+        Appearance.ColorMirrorDown = 946929
+        Appearance.ColorMirrorDownTo = 5021693
+        Appearance.ColorMirrorChecked = 10480637
+        Appearance.ColorMirrorCheckedTo = 5682430
+        Appearance.ColorMirrorDisabled = 11974326
+        Appearance.ColorMirrorDisabledTo = 15921906
+        Appearance.GradientHot = ggVertical
+        Appearance.GradientMirrorHot = ggVertical
+        Appearance.GradientDown = ggVertical
+        Appearance.GradientMirrorDown = ggVertical
+        Appearance.GradientChecked = ggVertical
+        Appearance.TextColorDisabled = 13948116
+        UIStyle = tsWhidbey
+        ExplicitLeft = 7
+        ExplicitTop = 8
+      end
+    end
+    object edtCnpj: TEdit
+      Left = 287
+      Top = 47
+      Width = 121
+      Height = 21
+      TabOrder = 3
+    end
+    object Button2: TButton
+      Left = 763
+      Top = 21
+      Width = 75
+      Height = 25
+      Caption = 'Novo'
+      TabOrder = 4
+      Visible = False
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 763
+      Top = 1
+      Width = 75
+      Height = 25
+      Caption = 'Visualizar'
+      TabOrder = 5
+      Visible = False
+      OnClick = Button3Click
+    end
+    object AdvGlowButton1: TAdvGlowButton
+      Left = 462
+      Top = 33
+      Width = 42
+      Height = 35
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      Picture.Data = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000097048597300000B1300000B1301009A9C18000001CA494441545885
+        D5974D4E02411085DB1BA86B1271A3F167A50E1C40E20D881C837006C18D4122
+        7002D18B089E410D7103EE45176258683DED49C64935F3181B8C957C1B52AF5F
+        255D55D318F3CF624908848AD012AE2D2DFB5B6073BCC7BAD0169E848F048636
+        37EBC378556808EF84719CB1501756D29A6F0AF7298CE3F4859D59CD8F84170F
+        E62123A1C09AEF92E613A16B9990456C2799E3CE1F89C3506010D1E584574287
+        EB98DA130DE21070A2686BA4B6EE32C7A8B1DD7EACE84BA416D391D50A689307
+        80A2A22FCEA06FC6C5D85E8305163034B18D999F41ECA300701015571C49E876
+        345CC91A8464940232B11C68AAC63D1DE5A858BB7FCC7674D4D246CEE87BE247
+        1F5C2909371ECCC3E829E75F46133A4A42D76301B74905B8AE20E7C13C6F882B
+        7035211A081B2E6D13D60CD9848123699E63B81715FFF92242B41658C085A2FF
+        FA408CC9034A8A9EFD18BD096B5A018873F290AAA23D25B5672E73041E0B7DE2
+        1074767444F3867B903C08CBD30A40E0D934220EC36CF72CCC93EC59D84A320F
+        A34016C102F343D63C8C0DE1CE8339AE34F131EA0AF404DE70EC74C4BB1D0D97
+        78E74C64CDF7EE6696D5C0E63A47ED3781ED85974CD99A742C4DFBDBBE99D39F
+        D3B9C527F8B50234F54E7CD70000000049454E44AE426082}
+      Rounded = True
+      TabOrder = 6
+      OnClick = AdvGlowButton1Click
+      Appearance.BorderColor = 10070188
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.BorderColorChecked = 13744549
+      Appearance.Color = clWhite
+      Appearance.ColorTo = 14675440
+      Appearance.ColorChecked = 11918331
+      Appearance.ColorCheckedTo = 7915518
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 14675440
+      Appearance.ColorMirrorTo = 14675440
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Appearance.TextColorDisabled = 13948116
+      UIStyle = tsWhidbey
+    end
+    object AdvGlowButton2: TAdvGlowButton
+      Left = 414
+      Top = 33
+      Width = 42
+      Height = 35
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      Picture.Data = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000097048597300000B1300000B1301009A9C18000001B2494441545885
+        ED564B4A0341102DA36E3D8506B2988877D02111D1750886A8A7D0C5908DBF43
+        9808EA2EA750F006EA29E26F614411AD87DD74D119A5A7A733D9E4C183A4E9EA
+        F7BAAAA7BA89A670C31C3362D6152335367694993DE623F3DB22C6BACCA57108
+        CF303BCC8F14619B9893A89860E25796C81DF388D956C4EF7B6BCE4528131DB1
+        E833B3F1C7C2186B325FC4FC24AF386AAED30EF1C821A62A4C2076318F817332
+        BB696488DB16715D5FF179E613999A67A927E63EA8D801797EA2CB647671E811
+        7F2CE25D4A3782BA58A0ED11BF2BE26B3E066A62811D8FF8BDBC064296A0EA63
+        008750B75C34992C87B044E610628D591F03408FCC2E9A19E25A22EECC571CC0
+        C5A21B119A8B4B2A51BA57328DA89CC7009090D90D4CA0C9A49503696F097170
+        3FAF3829B14BB12888FA9E90B98C4EC9D4DCBE902AA14C20132ED7F127F34089
+        E3FF17B3CF5C096104170B7AFB204518A71D074ED7BCA2C4E53B61238409403E
+        C9D6E9F770A67D6A7DCBE490198732E102A4DD2EDB1B73B5481348FB30C58457
+        7BF645AC44A58977E6669126D6683413D714F0F1EA825898B8652E1429AEB1C5
+        BC9994B8466992E253FC8B1F263BABFB4C57522D0000000049454E44AE426082}
+      Rounded = True
+      TabOrder = 7
+      OnClick = AdvGlowButton2Click
+      Appearance.BorderColor = 10070188
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.BorderColorChecked = 13744549
+      Appearance.Color = clWhite
+      Appearance.ColorTo = 14675440
+      Appearance.ColorChecked = 11918331
+      Appearance.ColorCheckedTo = 7915518
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 14675440
+      Appearance.ColorMirrorTo = 14675440
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Appearance.TextColorDisabled = 13948116
+      UIStyle = tsWhidbey
+    end
+    object AdvGlowButton3: TAdvGlowButton
+      Left = 510
+      Top = 33
+      Width = 42
+      Height = 35
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      Picture.Data = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000097048597300000B1300000B1301009A9C1800000107494441545885
+        EDD64B0AC2301006E0DAB5201E40DC888B6A93B633E9423C8128780BBD8B3771
+        DF537805D7828A286E04F135631542155C2545C84068DACDF7CF10683CCF95E1
+        0AC37EBD343C425402D59E5616C771D32A1E044195E08D4475E745FB9540EC5A
+        C1B9F3102091908E093E6B21B61DC486513C8771C7A3E7205F4264C6710DFB08
+        C1DF00A0661C2F8688000612712D01526B7831041F4CEBF82BC0A194CE1DEE70
+        873BDCE1FF877311B0A475FBF5673382D3C5B125002F2251439AC2D16AE75C02
+        D494022C784F5DF6F410C6F16700C4B90435D3DE47845F8D8E5D2B9F6FADD4F5
+        8943F02418E7336103F78452EDF7D5399F044CF84C1887B5AA70087AFA365157
+        0FCFE8576FDB6550570000000049454E44AE426082}
+      Rounded = True
+      TabOrder = 8
+      OnClick = AdvGlowButton3Click
+      Appearance.BorderColor = 10070188
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.BorderColorChecked = 13744549
+      Appearance.Color = clWhite
+      Appearance.ColorTo = 14675440
+      Appearance.ColorChecked = 11918331
+      Appearance.ColorCheckedTo = 7915518
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 14675440
+      Appearance.ColorMirrorTo = 14675440
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Appearance.TextColorDisabled = 13948116
+      UIStyle = tsWhidbey
+    end
+  end
+  object DBGrid1: TDBGrid [1]
+    Left = 0
+    Top = 97
+    Width = 936
+    Height = 273
+    Align = alClient
+    DataSource = dsFiltro
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  inherited fdQryFiltro: TFDQuery
+    SQL.Strings = (
+      'SELECT * FROM FORNECEDOR')
+    object fdQryFiltroID_FORNECEDOR: TIntegerField
+      FieldName = 'ID_FORNECEDOR'
+      Origin = 'ID_FORNECEDOR'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object fdQryFiltroRAZAO_SOCIAL: TWideStringField
+      FieldName = 'RAZAO_SOCIAL'
+      Origin = 'RAZAO_SOCIAL'
+      Size = 80
+    end
+    object fdQryFiltroFANTASIA: TWideStringField
+      FieldName = 'FANTASIA'
+      Origin = 'FANTASIA'
+      Size = 80
+    end
+    object fdQryFiltroCNPJ: TWideStringField
+      FieldName = 'CNPJ'
+      Origin = 'CNPJ'
+    end
+    object fdQryFiltroENDERECO: TWideStringField
+      FieldName = 'ENDERECO'
+      Origin = 'ENDERECO'
+      Size = 255
+    end
+    object fdQryFiltroBAIRRO: TWideStringField
+      FieldName = 'BAIRRO'
+      Origin = 'BAIRRO'
+      Size = 50
+    end
+    object fdQryFiltroID_CIDADE: TIntegerField
+      FieldName = 'ID_CIDADE'
+      Origin = 'ID_CIDADE'
+    end
+    object fdQryFiltroID_ESTADO: TIntegerField
+      FieldName = 'ID_ESTADO'
+      Origin = 'ID_ESTADO'
+    end
+    object fdQryFiltroEMAIL: TWideStringField
+      FieldName = 'EMAIL'
+      Origin = 'EMAIL'
+      Size = 255
+    end
+  end
+end

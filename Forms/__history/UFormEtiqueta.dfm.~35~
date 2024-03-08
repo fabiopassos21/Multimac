@@ -1,0 +1,343 @@
+object FormEtiqueta: TFormEtiqueta
+  Left = 0
+  Top = 0
+  Caption = 'FormEtiqueta'
+  ClientHeight = 435
+  ClientWidth = 714
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 714
+    Height = 113
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+    ExplicitTop = -6
+    object Label1: TLabel
+      Left = 16
+      Top = 18
+      Width = 224
+      Height = 25
+      Caption = 'Caminho da Impressora'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -21
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 573
+      Top = 18
+      Width = 56
+      Height = 13
+      Caption = 'Quantidade'
+    end
+    object Label3: TLabel
+      Left = 531
+      Top = 18
+      Width = 36
+      Height = 13
+      Caption = 'Avanco'
+    end
+    object btn_editar: TImage
+      Left = 413
+      Top = 19
+      Width = 33
+      Height = 33
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000200000
+        00200806000000737A7AF4000000097048597300000B1300000B1301009A9C18
+        0000032D4944415478DACD974B48545118C7FFC7D1DE56AB20338AB2280982DA
+        B528EC210491A18E54AB9A1947910C5AB56A21B80C92DCD838332AB8B149492A
+        228AEC498B2828175A82119454B64827F3318FD3FF8EF7EA9DF18E7367EE507E
+        CCDC7B5EF7FC7FF7FBCEEB0AFC67134B12A0E69CDC11C945718EC4B2640F46F8
+        CBCBC38B9616F123B1AEB6566E8886B06F63211E353488B06980BA3AB926348D
+        26269D66E8A5C4A0D72F76EBCB5C2EB95348F4315920817B2B57A1A2B9594C9B
+        02A8764AAF59F159020CB4FA45719CE76CE863A79B749077C682A80C04C4CCA2
+        004EA72CCA0186D4EC701468B401BF170B41348AE76D6D62547B9E9D3DD1C429
+        1C1602B92A68AFC885DDE311A1A400745D195D775B4953DCE1F38936B38E88C1
+        2B6E17285405EF327F392AF04057D64388D3891073006EA7B4336637D5C22A8F
+        4F043211671F4FC7C651AAB8DC00EC56C1669CD10F4C4B000B04662D480F1EA7
+        075F26F14E1721CE12226A09C060C07DE67F8B1144CD79591C1178A78D09D695
+        B2EE61C6000BC419F315AB51393981AB14B9A087181FC7EBF5F9E866A727624D
+        257EB27CAFDF2F4632023012FF1544C5EC3493C2E5C0753D04FB7CCBB687D4FC
+        28C58FF2EDDF67340612C5D9FE7E288CF28E0E3135DF2A06D144888B710F4B7C
+        67D48F79DA45BFBED83480B2C2B193C7C66F1E6FF5F572F9D41F7CD08D891161
+        C3114EC1C1C4B6A600F4CB6B2A71BB5D2E8B8B39F0D51641C98D763104034B09
+        60CEEDF3E2EBD622C0B627D5B6DFF83FCC980F2089A5047039E400E3B9CBEA9B
+        2B3B642484674ADA968783DA2E9A12801B9454C5DF50FC40A66EE78254CEBDA6
+        5B49732654D02B3D6901F012F0FA4455A66E4FD6BF258074629E758074079C65
+        002A7C9102AFE646AFC43636DCAF66475857E2F58A8FC946BB150065EBB421B9
+        A514B70AE0E1CD6104A19C099183B254E29600B2652901AC1CC9CC58B5433AA8
+        E68B794EE014BDD61B0710772895F8C46B2357C06036C419AA7C8A5EA1D85625
+        1B8EA28887D9E1388018A55376F1569581463AD6DAEA136E2DB3E0C364660AD7
+        F8E64E64FFB34D99CEDEC9695CEAEC141386009AB9DD723BCFFC7B16FB344BC7
+        783C9F8944D0AFB95D6F4BF3E3F45FDA5FECF5423F4B2745260000000049454E
+        44AE426082}
+      Stretch = True
+      OnClick = btn_editarClick
+    end
+    object btn_salvar: TImage
+      Left = 460
+      Top = 19
+      Width = 33
+      Height = 33
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000200000
+        00200806000000737A7AF4000000097048597300000B1300000B1301009A9C18
+        000001DF4944415478DA63FCFFFF3F13C300024698033C3D3D5977EDDA9508E4
+        9B03B93C50392D2626265E1D1D1D3E5E5E5E56520C06EA6578FCF8F13720FECE
+        C8C8F80828F40C88BF00D927828383E7AF5AB5EA0FDC0120CB77ECD8B107C8B7
+        A193C70F858686BA821C017600333373DABF7FFFA6D32FE0191880219BFEF7EF
+        DF39600700C15C209D0092D0AA7EC6C0CA2B0957E8AAC1C0D0ED0F6137DFFBCD
+        70F0FD3F8286D72AB132D80B429296412742FCF7A7A70CD7DA64C06C60542C00
+        7A3A19E68015403A1424A1DFF11FC5306A3A00042E5630C21CB01AE88008AA39
+        A0589E85C1418899A1E3FE6F0627204D7707EC3666670019BDFFDD3F06262083
+        EE0ED803740008C0E4479E03E66BB331C87230322C79FE174CD3DD01022C8C0C
+        6ADC8C0C673FFD63A8521C805C800C68960DAF7DFDC7F0FA1741FB19B4802121
+        CAC6481D0738AB3130F40612B6141BF80734CAA88B420708733330CC8B626090
+        1722CD7290291B2E3130346EA7D001D406A30E1875C0A803461D30EA005C0E40
+        34CBAB9E30B0F249D3C4F2DF1F9F305C6B97853900D12C07764C52819C1934F5
+        3A1A007A3A0DD831990B7640585818CBEAD5AB7703C5EDE864FF4160D7CC0DDE
+        350389801CB176EDDA0420DF9201D239A50500754E8F013BA70B513AA774F235
+        560000C6B3241FDAC503670000000049454E44AE426082}
+      Stretch = True
+      OnClick = btn_salvarClick
+    end
+    object Label4: TLabel
+      Left = 16
+      Top = 58
+      Width = 74
+      Height = 13
+      Caption = 'Codigo Produto'
+    end
+    object Label5: TLabel
+      Left = 112
+      Top = 58
+      Width = 56
+      Height = 13
+      Caption = 'Codigo EAN'
+    end
+    object Label6: TLabel
+      Left = 207
+      Top = 58
+      Width = 46
+      Height = 13
+      Caption = 'Descri'#231#227'o'
+    end
+    object btn_Buscar: TImage
+      Left = 295
+      Top = 72
+      Width = 34
+      Height = 26
+      Picture.Data = {
+        0954506E67496D61676589504E470D0A1A0A0000000D49484452000000200000
+        00200806000000737A7AF4000000097048597300000B1300000B1301009A9C18
+        000002514944415478DAD5974D48545114808FAB122CADB08D29643F18D4CA0C
+        176535699BA05F685D41B58D1615BA4D42DCD4AEB4A2B62D4A0557A5D1CFA2BF
+        656486D8C23210B13FA1DAF51DCE191A269D77DFBCE90D5DF818DE85B9F7BBF7
+        9C77EE7D1552E656F13F08AC8483B01F9A608DF77F8031188201F85C6A814A38
+        0BE76079C4385FA1072EC38F5208D4C12034FBF37DB8034F7CE5DAEA61071C85
+        76EF7BE5BBF53189804EFE4C6CABDFC149781C31CE4EE8870D2ED81A2A912F50
+        E9AB6CF6497535A1B1D55C19F05D79096DF033AE40175CF495B7C6983C57E239
+        AC870B6279112CA07F9E846ADFD2A86D5FACED8651F8028D518BC815380137C4
+        126E6F919367DB03D803C7E156A880C6EF8058D25D4F28700AAEC13D381C2A30
+        0E1BC58ACD7842011D63CCC7690A15F80E55B00CE6130A54F978F33E5EEA025A
+        39B53A7E134BEA208152866013BC919821D084D1C2A309D49F50E0345C85BB70
+        2454405F999B62AF5047428111C8C031B81D2AB002DE8BC56C173C2A72F28C0B
+        68215AEBBF4102DA3AA1DB45B6C16CCCC9734BB11EE3BD517FC817582A76186D
+        F55FCD89B9C0C9578915B3EDF042AC9CC73E8CB4E51EC7136249F930621CDDF6
+        3E5807536207D9748875A10B89BE152DFEAC31CD5E48A6BCAF41FE5C4832DEA7
+        2B3F143A7921016D1A8E33701E6A22C6D144BB0457E097F73D8525B00F668A11
+        C8367D3BF490D24BA91698FC4BE9A0939FED7A3DD38BCD6BB1937141897F792D
+        AF150BDD16782B16A64F690A0449A4F161525022AD2FA34525D2FC345BED129B
+        C512B4256D81ACC4B0D8D7535B3904FE6A6517F80D05758121C9947FA7000000
+        0049454E44AE426082}
+      Stretch = True
+      OnClick = btn_BuscarClick
+    end
+    object bEtqSimples: TButton
+      Left = 635
+      Top = 15
+      Width = 67
+      Height = 66
+      Caption = 'Imprimir'
+      TabOrder = 0
+      OnClick = bEtqSimplesClick
+    end
+    object edAvanco: TEdit
+      Left = 531
+      Top = 37
+      Width = 36
+      Height = 21
+      Alignment = taCenter
+      TabOrder = 1
+    end
+    object DBEdit1: TDBEdit
+      Left = 246
+      Top = 25
+      Width = 153
+      Height = 16
+      DataField = 'CAMINHO_IMPRESSORA'
+      DataSource = DataSource1
+      Enabled = False
+      TabOrder = 2
+    end
+    object EDTQtd: TEdit
+      Left = 573
+      Top = 37
+      Width = 56
+      Height = 21
+      Alignment = taCenter
+      TabOrder = 3
+      Text = '1'
+    end
+    object edtDescricao: TEdit
+      Left = 207
+      Top = 77
+      Width = 59
+      Height = 21
+      TabOrder = 4
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 113
+    Width = 714
+    Height = 322
+    Align = alClient
+    DataSource = DataSource2
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object edtCodigo: TEdit
+    Left = 16
+    Top = 77
+    Width = 74
+    Height = 21
+    TabOrder = 2
+  end
+  object edtEAN: TEdit
+    Left = 112
+    Top = 77
+    Width = 74
+    Height = 21
+    TabOrder = 3
+  end
+  object FDQuery1: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'SELECT * FROM CONF_IMP_ETI')
+    Left = 624
+    Top = 120
+    object FDQuery1CAMINHO_IMPRESSORA: TStringField
+      FieldName = 'CAMINHO_IMPRESSORA'
+      Origin = 'CAMINHO_IMPRESSORA'
+      Size = 30
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 624
+    Top = 168
+  end
+  object FDTransaction: TFDTransaction
+    Connection = dmDados.fdCon
+    Left = 624
+    Top = 224
+  end
+  object ACBrETQ: TACBrETQ
+    Origem = ogTop
+    ArqLOG = 'etq.txt'
+    Porta = 'LPT1'
+    Ativo = False
+    Left = 624
+    Top = 328
+  end
+  object FDQryProduto: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'select * from produto')
+    Left = 552
+    Top = 224
+    object FDQryProdutoID_PRODUTO: TIntegerField
+      FieldName = 'ID_PRODUTO'
+      Origin = 'ID_PRODUTO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQryProdutoDESCRICAO: TWideStringField
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      Size = 80
+    end
+    object FDQryProdutoQTD: TSingleField
+      FieldName = 'QTD'
+      Origin = 'QTD'
+    end
+    object FDQryProdutoCUSTO: TSingleField
+      FieldName = 'CUSTO'
+      Origin = 'CUSTO'
+    end
+    object FDQryProdutoV_UNITARIO: TSingleField
+      FieldName = 'V_UNITARIO'
+      Origin = 'V_UNITARIO'
+    end
+    object FDQryProdutoUNIDADE: TWideStringField
+      FieldName = 'UNIDADE'
+      Origin = 'UNIDADE'
+      Size = 4
+    end
+    object FDQryProdutoPESO_LIQUIDO: TSingleField
+      FieldName = 'PESO_LIQUIDO'
+      Origin = 'PESO_LIQUIDO'
+    end
+    object FDQryProdutoPESO_BRUTO: TSingleField
+      FieldName = 'PESO_BRUTO'
+      Origin = 'PESO_BRUTO'
+    end
+    object FDQryProdutoFABRICANTE: TWideStringField
+      FieldName = 'FABRICANTE'
+      Origin = 'FABRICANTE'
+      Size = 60
+    end
+    object FDQryProdutoMARCA_MODELO: TWideStringField
+      FieldName = 'MARCA_MODELO'
+      Origin = 'MARCA_MODELO'
+      Size = 255
+    end
+    object FDQryProdutoID_FORNECEDOR: TIntegerField
+      FieldName = 'ID_FORNECEDOR'
+      Origin = 'ID_FORNECEDOR'
+    end
+    object FDQryProdutoDT_EXCLUIDO: TDateField
+      FieldName = 'DT_EXCLUIDO'
+      Origin = 'DT_EXCLUIDO'
+    end
+    object FDQryProdutoCODIGO_AUX: TWideStringField
+      FieldName = 'CODIGO_AUX'
+      Origin = 'CODIGO_AUX'
+      Size = 13
+    end
+  end
+  object DataSource2: TDataSource
+    DataSet = FDQryProduto
+    Left = 552
+    Top = 176
+  end
+end

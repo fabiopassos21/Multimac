@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><retConsStatServ xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <tpAmb>2</tpAmb>
+  <verAplic>14.3.7</verAplic>
+  <cStat>107</cStat>
+  <xMotivo>Servico em operacao</xMotivo>
+  <cUF>31</cUF>
+  <dhRecbto>2019-05-22T21:49:25-03:00</dhRecbto>
+  <tMed>1</tMed>
+</retConsStatServ>

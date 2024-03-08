@@ -1,0 +1,881 @@
+-- 22/02 10:11:48:863 - DefinirCor:  Frente:FF0000, FrenteOpacidade:0  Fundo:000000, FundoOpacidade:0
+-- 22/02 10:11:48:863 - ImprimirTexto:  Orientacao:orNormal, Fonte:2, MultiplicadorH:2, MultiplicadorV:2, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:12:50:515 - DefinirCor:  Frente:FF0000, FrenteOpacidade:0  Fundo:000000, FundoOpacidade:0
+-- 22/02 10:12:50:531 - ImprimirTexto:  Orientacao:orNormal, Fonte:2, MultiplicadorH:2, MultiplicadorV:2, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:13:58:164 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:13:58:179 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES  5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:13:58:195 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:13:58:210 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 10:13:58:226 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 10:13:58:242 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:13:58:257 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:13:58:273 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 10:13:58:304 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 10:13:58:304 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 10:13:58:335 - IniciarEtiqueta
+-- 22/02 10:13:58:351 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 10:13:58:367 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^FO2,2^ATN,10,10^FR^FDRACAO PARA CAES  5KG^FS[CR][LF]^FO2,6^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO4,10^BY2,,10^BEN,8,Y,N^FD7896003701685^FS[CR][LF]^FO26,10^GB45,14,1,B,0^FS^FS[CR][LF]^FO28,14^AGN,80,40^FDR$^FS[CR][LF]^FO40,12^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 10:13:58:382 DESATIVAR
+-- 22/02 10:14:06:726 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:14:06:726 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES  5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:14:06:741 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:14:06:757 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 10:14:06:788 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 10:14:06:788 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:14:06:788 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:14:06:788 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 10:14:06:788 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 10:14:06:788 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 10:14:06:788 - IniciarEtiqueta
+-- 22/02 10:14:06:788 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 10:14:06:820 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^FO2,2^ATN,10,10^FR^FDRACAO PARA CAES  5KG^FS[CR][LF]^FO2,6^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO4,10^BY2,,10^BEN,8,Y,N^FD7896003701685^FS[CR][LF]^FO26,10^GB45,14,1,B,0^FS^FS[CR][LF]^FO28,14^AGN,80,40^FDR$^FS[CR][LF]^FO40,12^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 10:14:06:835 DESATIVAR
+-- 22/02 10:18:45:813 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:18:45:813 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES  5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:18:45:828 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:18:45:860 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 10:18:45:875 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 10:18:45:891 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:18:45:906 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:18:45:922 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 10:18:45:938 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 10:18:45:938 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 10:18:45:985 - IniciarEtiqueta
+-- 22/02 10:18:46:016 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 10:18:46:031 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^FO2,2^ATN,10,10^FR^FDRACAO PARA CAES  5KG^FS[CR][LF]^FO2,6^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO4,10^BY2,,10^BEN,8,Y,N^FD7896003701685^FS[CR][LF]^FO26,10^GB45,14,1,B,0^FS^FS[CR][LF]^FO28,14^AGN,80,40^FDR$^FS[CR][LF]^FO40,12^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 10:18:46:047 DESATIVAR
+-- 22/02 10:22:23:933 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:22:23:933 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:22:23:948 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:22:23:948 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 10:22:23:948 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 10:22:23:964 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:22:23:995 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:22:23:995 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 10:22:23:995 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 10:22:23:995 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 10:22:24:011 - IniciarEtiqueta
+-- 22/02 10:22:24:026 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 10:22:24:042 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^FO2,2^ATN,10,10^FR^FDRACAO PARA CAES AEIOU 5KG^FS[CR][LF]^FO2,6^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO4,10^BY2,,10^BEN,8,Y,N^FD7896003701685^FS[CR][LF]^FO26,10^GB45,14,1,B,0^FS^FS[CR][LF]^FO28,14^AGN,80,40^FDR$^FS[CR][LF]^FO40,12^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 10:22:24:058 DESATIVAR
+-- 22/02 10:55:38:511 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:55:38:511 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:58:12:005 - SetModelo. etqZPLII
+-- 22/02 10:58:12:005 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 10:58:12:005 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 10:58:12:036 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:58:12:052 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 10:58:12:083 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:58:12:099 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 10:58:12:114 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 10:58:12:130 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:58:12:146 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 10:58:12:161 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 10:58:12:192 - IniciarEtiqueta
+-- 22/02 10:58:12:208 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 10:58:12:224 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^FO2,2^ATN,10,10^FR^FDRACAO PARA CAES AEIOU 5KG^FS[CR][LF]^FO2,6^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO4,10^BY2,,10^BEN,8,Y,N^FD7896003701685^FS[CR][LF]^FO26,10^GB45,14,1,B,0^FS^FS[CR][LF]^FO28,14^AGN,80,40^FDR$^FS[CR][LF]^FO40,12^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 10:58:12:239 DESATIVAR
+-- 22/02 10:59:29:863 - SetModelo. etqZPLII
+-- 22/02 10:59:29:863 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 10:59:29:863 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 10:59:29:910 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 10:59:29:925 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 10:59:29:925 - IniciarEtiqueta
+-- 22/02 10:59:29:925 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 10:59:29:941 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 10:59:29:972 DESATIVAR
+-- 22/02 12:01:02:021 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:01:02:021 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:01:02:052 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:01:02:052 - Modelo: EPL2 - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:01:02:084 - IniciarEtiqueta
+-- 22/02 12:01:02:099 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:01:02:130 R0,0[LF]O[LF]N[LF]D10[LF]ZB[LF]X24,24,40,743,64[LF]P1[LF]N[LF]
+-- 22/02 12:01:02:146 DESATIVAR
+-- 22/02 12:01:02:505 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:01:02:505 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:01:02:537 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:01:02:537 - Modelo: EPL2 - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:01:02:552 - IniciarEtiqueta
+-- 22/02 12:01:02:568 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:01:02:599 R0,0[LF]O[LF]N[LF]D10[LF]ZB[LF]X24,24,40,743,64[LF]P1[LF]N[LF]
+-- 22/02 12:01:02:615 DESATIVAR
+-- 22/02 12:29:47:908 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:20, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:29:47:910 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:30:13:348 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:20, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:0
+-- 22/02 12:30:13:349 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:30:49:155 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:30:49:156 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:31:35:763 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:31:35:764 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:32:12:378 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:32:12:379 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:32:47:370 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:32:47:371 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:36:27:072 - SetModelo. etqZPLII
+-- 22/02 12:36:27:073 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:36:27:073 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:36:27:151 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:36:27:187 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:36:27:212 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:36:27:237 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 12:36:27:239 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 12:36:27:270 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:36:27:290 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:36:27:311 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:36:27:334 - IniciarEtiqueta
+-- 22/02 12:36:27:402 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:36:27:432 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO2,2^GB72,4,4,B,4^FS^FS[CR][LF]^FO2,2^ATN,10,10^FR^FDRACAO PARA CAES AEIOU 5KG^FS[CR][LF]^FO2,6^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO4,10^BY2,,10^BEN,8,Y,N^FD7896003701685^FS[CR][LF]^FO26,10^GB45,14,1,B,0^FS^FS[CR][LF]^FO28,14^AGN,80,40^FDR$^FS[CR][LF]^FO40,12^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 12:36:27:456 DESATIVAR
+-- 22/02 12:37:57:544 - SetModelo. etqZPLII
+-- 22/02 12:37:57:545 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:37:57:545 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:37:57:637 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:37:57:667 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES ¡…Õ”⁄ 5KG, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:37:57:690 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:37:57:713 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 12:37:57:739 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 12:37:57:761 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:37:57:782 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:37:57:852 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:37:57:877 - IniciarEtiqueta
+-- 22/02 12:37:57:907 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:37:57:930 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDRACAO PARA CAES AEIOU 5KG^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 12:37:57:955 DESATIVAR
+-- 22/02 12:44:44:972 - SetModelo. etqZPLII
+-- 22/02 12:44:44:973 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:44:44:973 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:44:45:015 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:44:45:036 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:32, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:44:45:060 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:44:45:085 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 12:44:45:108 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 12:44:45:133 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:44:45:164 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:44:45:189 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:44:45:211 - IniciarEtiqueta
+-- 22/02 12:44:45:234 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:44:45:259 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FD32^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 12:44:45:285 DESATIVAR
+-- 22/02 12:47:25:907 - SetModelo. etqZPLII
+-- 22/02 12:47:25:908 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:47:25:908 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:47:25:951 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:47:25:972 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:47:25:996 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:47:26:019 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 12:47:26:041 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 12:47:26:064 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:47:26:094 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:47:26:116 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:47:26:141 - IniciarEtiqueta
+-- 22/02 12:47:26:164 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:47:26:189 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 12:47:26:215 DESATIVAR
+-- 22/02 12:48:00:242 - SetModelo. etqZPLII
+-- 22/02 12:48:00:243 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:48:00:243 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:48:00:280 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:48:00:302 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:48:00:326 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:48:00:347 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 12:48:00:372 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 12:48:00:395 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:48:00:427 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:48:00:450 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:48:00:474 - IniciarEtiqueta
+-- 22/02 12:48:00:495 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:48:00:517 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 12:48:00:539 DESATIVAR
+-- 22/02 12:49:34:242 - SetModelo. etqZPLII
+-- 22/02 12:49:34:243 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 12:49:34:243 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 12:49:34:285 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 12:49:34:304 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 12:49:34:336 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:49:34:360 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 12:49:34:387 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 12:49:34:411 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:49:34:433 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 12:49:34:456 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 12:49:34:481 - IniciarEtiqueta
+-- 22/02 12:49:34:483 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 12:49:34:507 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 12:49:34:531 DESATIVAR
+-- 22/02 13:06:05:593 - SetModelo. etqZPLII
+-- 22/02 13:06:05:594 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 13:06:05:594 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 13:06:05:631 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 13:06:05:653 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 13:06:05:683 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:06:05:704 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 13:06:05:727 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 13:06:05:751 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:06:05:773 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:06:05:794 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 13:06:05:817 - IniciarEtiqueta
+-- 22/02 13:06:05:849 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 13:06:05:878 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 13:06:05:880 DESATIVAR
+-- 22/02 13:09:32:055 - SetModelo. etqZPLII
+-- 22/02 13:09:32:056 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 13:09:32:056 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 13:09:32:094 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 13:09:32:114 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 13:09:32:138 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:32:161 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 13:09:32:185 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 13:09:32:209 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:32:233 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:32:258 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 13:09:32:281 - IniciarEtiqueta
+-- 22/02 13:09:32:313 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 13:09:32:336 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 13:09:32:338 DESATIVAR
+-- 22/02 13:09:41:775 - SetModelo. etqZPLII
+-- 22/02 13:09:41:776 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 13:09:41:776 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 13:09:41:812 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 13:09:41:835 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 13:09:41:857 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:41:878 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:2, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 13:09:41:901 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 13:09:41:923 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:41:945 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:41:966 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 13:09:41:989 - IniciarEtiqueta
+-- 22/02 13:09:42:011 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 13:09:42:041 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD2^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 13:09:42:062 DESATIVAR
+-- 22/02 13:09:42:303 - SetModelo. etqZPLII
+-- 22/02 13:09:42:304 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 13:09:42:304 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 13:09:42:325 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 13:09:42:347 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 13:09:42:350 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:42:352 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:2, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 13:09:42:372 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 13:09:42:406 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:42:431 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:42:433 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 13:09:42:466 - IniciarEtiqueta
+-- 22/02 13:09:42:490 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 13:09:42:515 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD2^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 13:09:42:549 DESATIVAR
+-- 22/02 13:09:47:472 - SetModelo. etqZPLII
+-- 22/02 13:09:47:473 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 13:09:47:473 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 13:09:47:498 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 13:09:47:523 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 13:09:47:555 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:47:583 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:3, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 13:09:47:605 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 13:09:47:630 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:47:653 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:09:47:676 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 13:09:47:700 - IniciarEtiqueta
+-- 22/02 13:09:47:725 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 13:09:47:728 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD3^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 13:09:47:730 DESATIVAR
+-- 22/02 13:29:17:741 - SetModelo. etqZPLII
+-- 22/02 13:29:17:765 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 13:29:17:765 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 13:29:17:811 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 13:29:17:836 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 2, SubFonte:0, ImprimirReverso:True
+-- 22/02 13:29:17:838 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:29:17:864 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:3, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 13:29:17:890 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 13:29:17:973 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:29:18:000 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 13:29:18:002 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 13:29:18:003 - IniciarEtiqueta
+-- 22/02 13:29:18:030 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 13:29:18:056 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 2^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD3^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 13:29:18:081 DESATIVAR
+-- 22/02 14:28:35:415 - SetModelo. etqZPLII
+-- 22/02 14:28:35:417 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:28:35:417 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:28:38:191 DESATIVAR
+-- 22/02 14:28:38:192 - SetModelo. etqZPLII
+-- 22/02 14:28:38:214 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:28:38:214 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:28:43:319 DESATIVAR
+-- 22/02 14:28:43:319 - SetModelo. etqZPLII
+-- 22/02 14:28:43:347 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:28:43:347 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:28:43:371 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 14:28:43:402 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 14:28:43:463 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:28:43:486 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 14:28:43:509 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 14:28:43:532 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:28:43:556 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:28:43:558 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 14:28:43:560 - IniciarEtiqueta
+-- 22/02 14:28:43:581 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 14:28:43:606 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 14:28:43:641 DESATIVAR
+-- 22/02 14:28:49:183 - SetModelo. etqZPLII
+-- 22/02 14:28:49:184 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:28:49:184 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:28:50:991 DESATIVAR
+-- 22/02 14:28:50:991 - SetModelo. etqZPLII
+-- 22/02 14:28:51:062 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:28:51:062 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:28:51:971 DESATIVAR
+-- 22/02 14:30:28:526 - SetModelo. etqZPLII
+-- 22/02 14:30:28:527 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:30:28:527 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:30:31:350 DESATIVAR
+-- 22/02 14:30:31:350 - SetModelo. etqZPLII
+-- 22/02 14:30:31:377 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:30:31:377 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:30:33:222 DESATIVAR
+-- 22/02 14:30:33:223 - SetModelo. etqZPLII
+-- 22/02 14:30:33:246 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:30:33:246 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:30:35:054 DESATIVAR
+-- 22/02 14:30:35:055 - SetModelo. etqZPLII
+-- 22/02 14:30:35:113 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:30:35:113 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:30:35:139 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 14:30:35:164 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 2, SubFonte:0, ImprimirReverso:True
+-- 22/02 14:30:35:197 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:30:35:222 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:3, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 14:30:35:250 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 14:30:35:322 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:30:35:349 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:30:35:373 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 14:30:35:401 - IniciarEtiqueta
+-- 22/02 14:30:35:438 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 14:30:35:464 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 2^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD3^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 14:30:35:491 DESATIVAR
+-- 22/02 14:51:48:483 - SetModelo. etqZPLII
+-- 22/02 14:51:48:485 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:51:48:485 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:51:48:531 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 14:51:48:551 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 14:51:48:577 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:51:48:604 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 14:51:48:627 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 14:51:48:650 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:51:48:681 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:51:48:704 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 14:51:48:729 - IniciarEtiqueta
+-- 22/02 14:51:48:753 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 14:51:48:780 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 14:51:53:083 DESATIVAR
+-- 22/02 14:51:53:084 - SetModelo. etqZPLII
+-- 22/02 14:51:53:107 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 14:51:53:107 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 14:51:53:132 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 14:51:53:155 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 14:51:53:180 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:51:53:208 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 14:51:53:238 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 14:51:53:262 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:51:53:286 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 14:51:53:312 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 14:51:53:339 - IniciarEtiqueta
+-- 22/02 14:51:53:366 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 14:51:53:392 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 14:51:54:998 DESATIVAR
+-- 22/02 15:38:58:386 - SetModelo. etqZPLII
+-- 22/02 15:38:58:388 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:38:58:388 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:38:58:438 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:38:58:466 - IniciarEtiqueta
+-- 22/02 15:38:58:499 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:38:58:527 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:39:02:602 DESATIVAR
+-- 22/02 15:39:02:603 - SetModelo. etqZPLII
+-- 22/02 15:39:02:626 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:39:02:626 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:39:02:651 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:39:02:674 - IniciarEtiqueta
+-- 22/02 15:39:02:697 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:39:02:728 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:39:04:738 DESATIVAR
+-- 22/02 15:39:04:738 - SetModelo. etqZPLII
+-- 22/02 15:39:04:765 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:39:04:765 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:39:04:789 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:39:04:812 - IniciarEtiqueta
+-- 22/02 15:39:04:837 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:39:04:863 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:39:05:500 DESATIVAR
+-- 22/02 15:39:33:330 - SetModelo. etqZPLII
+-- 22/02 15:39:33:331 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:39:33:331 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:39:33:389 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:39:33:479 - IniciarEtiqueta
+-- 22/02 15:39:33:481 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:39:33:507 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:39:35:196 DESATIVAR
+-- 22/02 15:40:29:474 - SetModelo. etqZPLII
+-- 22/02 15:40:29:475 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:40:29:475 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:40:29:521 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:40:29:547 - IniciarEtiqueta
+-- 22/02 15:40:29:549 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:40:29:570 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:40:43:906 DESATIVAR
+-- 22/02 15:40:43:906 - SetModelo. etqZPLII
+-- 22/02 15:40:43:937 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:40:43:937 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:40:43:965 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:40:43:991 - IniciarEtiqueta
+-- 22/02 15:40:44:018 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:40:44:042 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:40:51:322 DESATIVAR
+-- 22/02 15:40:51:323 - SetModelo. etqZPLII
+-- 22/02 15:40:51:350 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:40:51:350 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:40:51:376 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 15:40:51:408 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 15:40:51:433 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:40:51:459 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 15:40:51:484 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 15:40:51:509 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:40:51:535 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:40:51:579 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:40:51:606 - IniciarEtiqueta
+-- 22/02 15:40:51:643 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:40:51:673 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:41:04:241 DESATIVAR
+-- 22/02 15:41:04:242 - SetModelo. etqZPLII
+-- 22/02 15:41:04:274 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:41:04:274 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:41:04:304 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:41:04:333 - IniciarEtiqueta
+-- 22/02 15:41:04:362 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:41:04:400 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:41:10:601 DESATIVAR
+-- 22/02 15:41:10:602 - SetModelo. etqZPLII
+-- 22/02 15:41:10:639 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:41:10:639 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:41:10:667 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:41:10:693 - IniciarEtiqueta
+-- 22/02 15:41:10:719 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:41:10:749 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:41:11:566 DESATIVAR
+-- 22/02 15:42:51:352 - SetModelo. etqZPLII
+-- 22/02 15:42:51:353 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:42:51:353 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:42:51:401 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 15:42:51:428 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:51:504 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:12, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:51:578 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 15:42:51:609 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 15:42:51:639 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:51:665 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:51:687 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:42:51:742 - IniciarEtiqueta
+-- 22/02 15:42:51:744 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:42:51:746 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FDPRODUTO 1^FS[CR][LF]^FO24,96^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:42:51:968 DESATIVAR
+-- 22/02 15:42:51:969 - SetModelo. etqZPLII
+-- 22/02 15:42:52:011 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:42:52:011 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:42:52:038 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 15:42:52:065 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:52:093 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:12, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:52:120 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 15:42:52:145 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 15:42:52:173 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:52:207 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:42:52:256 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:42:52:294 - IniciarEtiqueta
+-- 22/02 15:42:52:320 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:42:52:357 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FDPRODUTO 1^FS[CR][LF]^FO24,96^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:42:57:456 DESATIVAR
+-- 22/02 15:47:16:494 - SetModelo. etqZPLII
+-- 22/02 15:47:16:495 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:47:16:495 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:47:16:536 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 15:47:16:559 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 2, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:47:16:582 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:14, MultiplicadorV:14, Vertical:10, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:47:16:608 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:3, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 15:47:16:633 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:47:16:661 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:47:16:687 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:47:16:721 - IniciarEtiqueta
+-- 22/02 15:47:16:747 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:47:16:776 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FDPRODUTO 2^FS[CR][LF]^FO24,80^ASN,14,14^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD3^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:47:23:125 DESATIVAR
+-- 22/02 15:53:28:706 - SetModelo. etqZPLII
+-- 22/02 15:53:28:707 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:53:28:707 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:53:28:778 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:53:28:801 - IniciarEtiqueta
+-- 22/02 15:53:28:825 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:53:28:852 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:53:29:139 DESATIVAR
+-- 22/02 15:53:29:140 - SetModelo. etqZPLII
+-- 22/02 15:53:29:163 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:53:29:163 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:53:29:187 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:53:29:218 - IniciarEtiqueta
+-- 22/02 15:53:29:252 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:53:29:279 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:53:35:923 DESATIVAR
+-- 22/02 15:55:09:282 - SetModelo. etqZPLII
+-- 22/02 15:55:09:283 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:55:09:283 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:55:10:927 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:55:10:928 - IniciarEtiqueta
+-- 22/02 15:55:10:955 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:55:10:983 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:55:13:146 DESATIVAR
+-- 22/02 15:55:13:147 - SetModelo. etqZPLII
+-- 22/02 15:55:13:172 
+--------------------------------------------------------------------------------
+ATIVAR - 22/02/24 15:55:13:171 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 22/02 15:55:13:197 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 22/02 15:55:13:223 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 22/02 15:55:13:248 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:55:13:279 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:C, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 22/02 15:55:13:304 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 22/02 15:55:13:331 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:55:13:356 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 22/02 15:55:13:392 - Imprimir. Copias:1, AvancoEtq:0
+-- 22/02 15:55:13:419 - IniciarEtiqueta
+-- 22/02 15:55:13:442 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 22/02 15:55:13:470 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BCN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 22/02 15:55:15:111 DESATIVAR
+-- 23/02 11:18:54:386 - SetModelo. etqZPLII
+-- 23/02 11:18:54:388 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 11:18:54:388 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 11:18:54:442 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 11:18:54:467 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES  5KG, SubFonte:0, ImprimirReverso:True
+-- 23/02 11:18:54:488 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:18:54:512 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 11:18:54:541 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 11:18:54:543 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:18:54:545 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:18:54:547 - Imprimir. Copias:1, AvancoEtq:1
+-- 23/02 11:18:54:568 - IniciarEtiqueta
+-- 23/02 11:18:54:592 - FinalizarEtiqueta: Copias:1, AvancoEtq:1
+-- 23/02 11:18:54:617 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO32,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO32,24^ATN,10,10^FR^FDRACAO PARA CAES  5KG^FS[CR][LF]^FO32,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO48,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO264,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO288,144^AGN,80,40^FDR$^FS[CR][LF]^FO408,120^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^PH[CR][LF]^MCY[CR][LF]
+-- 23/02 11:18:54:643 DESATIVAR
+-- 23/02 11:19:32:681 - SetModelo. etqZPLII
+-- 23/02 11:19:32:682 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 11:19:32:682 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 11:19:32:718 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 11:19:32:773 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:RA«√O PARA C√ES  5KG, SubFonte:0, ImprimirReverso:True
+-- 23/02 11:19:32:795 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:M…DIO PORTE, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:19:32:817 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 11:19:32:841 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 11:19:32:863 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:19:32:888 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:20,59, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:19:32:911 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 11:19:32:936 - IniciarEtiqueta
+-- 23/02 11:19:32:960 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 11:19:32:989 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDRACAO PARA CAES  5KG^FS[CR][LF]^FO24,64^ASN,10,10^FDMEDIO PORTE^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD20,59^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 11:19:33:012 DESATIVAR
+-- 23/02 11:31:27:476 - SetModelo. etqZPLII
+-- 23/02 11:31:27:477 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 11:31:27:477 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 11:31:27:520 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 11:31:34:024 DESATIVAR
+-- 23/02 11:34:00:979 - SetModelo. etqZPLII
+-- 23/02 11:34:00:980 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 11:34:00:980 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 11:34:01:023 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 11:34:11:384 DESATIVAR
+-- 23/02 11:38:25:264 - SetModelo. etqZPLII
+-- 23/02 11:38:25:265 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 11:38:25:265 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 11:38:25:304 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 11:38:25:331 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 11:38:25:353 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:38:25:377 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:7896003701685, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 11:38:25:408 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 11:38:25:411 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:38:25:412 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:10,52, SubFonte:0, ImprimirReverso:False
+-- 23/02 11:38:25:414 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 11:38:25:416 - IniciarEtiqueta
+-- 23/02 11:38:25:418 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 11:38:25:420 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD7896003701685^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD10,52^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 11:38:25:422 DESATIVAR
+-- 23/02 12:06:41:929 - SetModelo. etqZPLII
+-- 23/02 12:06:41:930 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 12:06:41:930 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 12:06:41:972 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 12:06:41:997 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 12:06:42:019 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:06:42:044 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 12:06:42:081 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 12:06:42:110 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:06:42:133 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:06:42:160 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 12:06:42:184 - IniciarEtiqueta
+-- 23/02 12:06:42:209 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 12:06:42:234 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 12:06:42:258 DESATIVAR
+-- 23/02 12:06:42:689 - SetModelo. etqZPLII
+-- 23/02 12:06:42:690 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 12:06:42:690 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 12:06:42:716 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 12:06:42:740 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 12:06:42:764 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:06:42:788 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 12:06:42:818 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 12:06:42:842 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:06:42:866 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:06:42:890 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 12:06:42:913 - IniciarEtiqueta
+-- 23/02 12:06:42:940 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 12:06:42:964 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 12:06:42:988 DESATIVAR
+-- 23/02 12:08:54:664 - SetModelo. etqZPLII
+-- 23/02 12:08:54:665 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 12:08:54:665 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 12:08:54:704 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 12:08:54:725 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 12:08:54:759 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:08:54:782 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 12:08:54:806 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 12:08:54:830 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:08:54:854 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:08:54:879 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 12:08:54:903 - IniciarEtiqueta
+-- 23/02 12:08:54:926 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 12:08:54:950 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 12:08:54:975 DESATIVAR
+-- 23/02 12:23:03:011 - SetModelo. etqZPLII
+-- 23/02 12:23:03:027 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 12:23:03:027 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 12:23:03:058 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 12:23:03:105 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 12:23:03:120 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:23:03:152 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 12:23:03:167 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 12:23:03:198 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:23:03:230 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 12:23:03:245 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 12:23:03:277 - IniciarEtiqueta
+-- 23/02 12:23:03:292 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 12:23:03:323 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 12:23:03:339 DESATIVAR
+-- 23/02 13:03:57:091 - SetModelo. etqZPLII
+-- 23/02 13:03:57:120 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 13:03:57:120 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 13:03:57:176 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 13:03:57:198 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 13:03:57:227 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:03:57:229 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 13:03:57:263 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 13:03:57:265 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:03:57:289 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:03:57:312 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 13:03:57:314 - IniciarEtiqueta
+-- 23/02 13:03:57:336 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 13:03:57:368 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 13:03:57:370 DESATIVAR
+-- 23/02 13:04:00:804 - SetModelo. etqZPLII
+-- 23/02 13:04:00:805 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 13:04:00:805 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 13:04:00:829 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 13:04:00:853 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 2, SubFonte:0, ImprimirReverso:True
+-- 23/02 13:04:00:877 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:04:00:899 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:3, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 13:04:00:928 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 13:04:00:952 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:04:00:975 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:04:00:999 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 13:04:01:023 - IniciarEtiqueta
+-- 23/02 13:04:01:047 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 13:04:01:070 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 2^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD3^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 13:04:01:094 DESATIVAR
+-- 23/02 13:20:40:195 - SetModelo. etqZPLII
+-- 23/02 13:20:40:227 
+--------------------------------------------------------------------------------
+ATIVAR - 23/02/24 13:20:40:227 - Modelo: ZPLII - Porta: USB:Elgin, L42 PRO - Device: BAUD=9600 DATA=8 PARITY=N STOP=1 HANDSHAKE= MAXBANDWIDTH=0 SENDBYTESCOUNT=0 SENDBYTESINTERVAL=0
+--------------------------------------------------------------------------------
+
+-- 23/02 13:20:40:267 - ImprimirCaixa:  Vertical:3, Horizontal:3, Largura:90, Altura:5, EspessuraVertical:5, EspessuraHorizontal:0, Canto:4
+-- 23/02 13:20:40:286 - ImprimirTexto:  Orientacao:orNormal, Fonte:T, MultiplicadorH:10, MultiplicadorV:10, Vertical:3, Horizontal:3, Texto:PRODUTO 1, SubFonte:0, ImprimirReverso:True
+-- 23/02 13:20:40:309 - ImprimirTexto:  Orientacao:orNormal, Fonte:S, MultiplicadorH:10, MultiplicadorV:10, Vertical:8, Horizontal:3, Texto:Categoria, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:20:40:335 - ImprimirBarras:  Orientacao:orNormal, TipoBarras:E, LarguraBarraLarga:2, LarguraBarraFina:2, Vertical:13, Horizontal:5, Texto:1, AlturaCodBarras:10, ExibeCodigo:becSIM
+-- 23/02 13:20:40:337 - ImprimirCaixa:  Vertical:13, Horizontal:32, Largura:56, Altura:17, EspessuraVertical:1, EspessuraHorizontal:1, Canto:0
+-- 23/02 13:20:40:339 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:40, MultiplicadorV:80, Vertical:18, Horizontal:35, Texto:R$, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:20:40:341 - ImprimirTexto:  Orientacao:orNormal, Fonte:G, MultiplicadorH:55, MultiplicadorV:100, Vertical:15, Horizontal:50, Texto:32, SubFonte:0, ImprimirReverso:False
+-- 23/02 13:20:40:366 - Imprimir. Copias:1, AvancoEtq:0
+-- 23/02 13:20:40:390 - IniciarEtiqueta
+-- 23/02 13:20:40:422 - FinalizarEtiqueta: Copias:1, AvancoEtq:0
+-- 23/02 13:20:40:447 ^XA[CR][LF]^MMT[CR][LF]^MCY[CR][LF]~SD10[CR][LF]^PON[CR][LF]^FO24,24^GB719,40,40,B,4^FS^FS[CR][LF]^FO24,24^ATN,10,10^FR^FDPRODUTO 1^FS[CR][LF]^FO24,64^ASN,10,10^FDCategoria^FS[CR][LF]^FO40,104^BY2,,10^BEN,80,Y,N^FD1^FS[CR][LF]^FO256,104^GB448,136,8,B,0^FS^FS[CR][LF]^FO280,144^AGN,80,40^FDR$^FS[CR][LF]^FO400,120^AGN,100,55^FD32^FS[CR][LF]^PQ1[CR][LF]^XZ[CR][LF]^MCY[CR][LF]
+-- 23/02 13:20:40:470 DESATIVAR

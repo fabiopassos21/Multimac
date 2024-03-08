@@ -1,0 +1,97 @@
+inherited FormFiltroVendas: TFormFiltroVendas
+  Caption = 'Filtro de vendas'
+  ClientHeight = 449
+  ClientWidth = 957
+  FormStyle = fsMDIChild
+  Visible = True
+  WindowState = wsMaximized
+  OnShow = FormShow
+  ExplicitWidth = 973
+  ExplicitHeight = 488
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    Width = 957
+    ExplicitWidth = 120
+    inherited Label1: TLabel
+      Width = 33
+      Caption = 'Cliente'
+      ExplicitWidth = 33
+    end
+    object Label2: TLabel [1]
+      Left = 223
+      Top = 16
+      Width = 84
+      Height = 13
+      Caption = 'Per'#237'odo de venda'
+    end
+    object Label3: TLabel [2]
+      Left = 429
+      Top = 16
+      Width = 33
+      Height = 13
+      Caption = 'Codigo'
+    end
+    inherited edtFiltro: TEdit
+      Width = 209
+      ExplicitWidth = 209
+    end
+    inherited btnFiltro: TButton
+      Left = 664
+      Caption = 'Filtrar'
+      OnClick = btnFiltroClick
+      ExplicitLeft = 664
+    end
+    inherited Panel2: TPanel
+      Left = 865
+      ExplicitLeft = 28
+    end
+    object edtData1: TDateTimePicker
+      Left = 223
+      Top = 35
+      Width = 97
+      Height = 21
+      Date = 42591.781641655090000000
+      Time = 42591.781641655090000000
+      TabOrder = 3
+    end
+    object edtData2: TDateTimePicker
+      Left = 326
+      Top = 35
+      Width = 97
+      Height = 21
+      Date = 42591.781641655090000000
+      Time = 42591.781641655090000000
+      TabOrder = 4
+    end
+    object edtCodigoVenda: TEdit
+      Left = 429
+      Top = 35
+      Width = 92
+      Height = 21
+      TabOrder = 5
+    end
+    object cbFaturado: TCheckBox
+      Left = 527
+      Top = 36
+      Width = 97
+      Height = 17
+      Caption = 'Faturado'
+      TabOrder = 6
+    end
+  end
+  object DBGrid1: TDBGrid [1]
+    Left = 0
+    Top = 97
+    Width = 957
+    Height = 352
+    Align = alClient
+    DataSource = dsFiltro
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+end

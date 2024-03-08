@@ -1,0 +1,114 @@
+inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
+  Caption = 'FormFiltroVendaNFE'
+  FormStyle = fsMDIChild
+  Visible = True
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    ExplicitTop = -6
+    inherited Label1: TLabel
+      Width = 72
+      Caption = 'Chave da Nota'
+      ExplicitWidth = 72
+    end
+    inherited edtFiltro: TEdit
+      Width = 233
+      ExplicitWidth = 233
+    end
+    inherited btnFiltro: TButton
+      Left = 735
+      Enabled = False
+      ExplicitLeft = 735
+    end
+    object Button2: TButton
+      Left = 654
+      Top = 30
+      Width = 75
+      Height = 29
+      Caption = 'Listar'
+      TabOrder = 3
+    end
+  end
+  object grid: TStringGrid [1]
+    Left = 0
+    Top = 97
+    Width = 908
+    Height = 238
+    Align = alClient
+    PopupMenu = PopupMenu1
+    TabOrder = 1
+    ExplicitLeft = 304
+    ExplicitTop = 128
+    ExplicitWidth = 320
+    ExplicitHeight = 120
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 440
+    Top = 144
+    object ImprimirNFE1: TMenuItem
+      Caption = 'Copiar Chave XML'
+      OnClick = ImprimirNFE1Click
+    end
+    object ImprimirDANFE1: TMenuItem
+      Caption = 'Imprimir DANFE'
+      OnClick = ImprimirDANFE1Click
+    end
+  end
+  object nfe: TACBrNFe
+    Configuracoes.Geral.SSLLib = libCustom
+    Configuracoes.Geral.SSLCryptLib = cryWinCrypt
+    Configuracoes.Geral.SSLHttpLib = httpOpenSSL
+    Configuracoes.Geral.SSLXmlSignLib = xsMsXml
+    Configuracoes.Geral.FormatoAlerta = 'TAG:%TAGNIVEL% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.'
+    Configuracoes.Arquivos.PathSalvar = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\'
+    Configuracoes.Arquivos.PathSchemas = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\'
+    Configuracoes.Arquivos.SepararPorCNPJ = True
+    Configuracoes.Arquivos.OrdenacaoPath = <
+      item
+        Item = opNenhum
+      end>
+    Configuracoes.Arquivos.SepararPorAno = True
+    Configuracoes.Arquivos.SalvarEvento = True
+    Configuracoes.Arquivos.PathNFe = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\Docs'
+    Configuracoes.WebServices.UF = 'SP'
+    Configuracoes.WebServices.AguardarConsultaRet = 0
+    Configuracoes.WebServices.QuebradeLinha = '|'
+    Configuracoes.RespTec.IdCSRT = 0
+    DANFE = ACBrNFeDANFEFR1
+    Left = 536
+    Top = 32
+  end
+  object ACBrNFeDANFEFR1: TACBrNFeDANFEFR
+    MostraSetup = True
+    Sistema = 'Projeto ACBr - www.projetoacbr.com.br'
+    MargemInferior = 0.800000000000000000
+    MargemSuperior = 0.800000000000000000
+    MargemEsquerda = 0.600000000000000000
+    MargemDireita = 0.510000000000000000
+    ExpandeLogoMarcaConfig.Altura = 0
+    ExpandeLogoMarcaConfig.Esquerda = 0
+    ExpandeLogoMarcaConfig.Topo = 0
+    ExpandeLogoMarcaConfig.Largura = 0
+    ExpandeLogoMarcaConfig.Dimensionar = False
+    ExpandeLogoMarcaConfig.Esticar = True
+    CasasDecimais.Formato = tdetInteger
+    CasasDecimais.qCom = 2
+    CasasDecimais.vUnCom = 2
+    CasasDecimais.MaskqCom = ',0.00'
+    CasasDecimais.MaskvUnCom = ',0.00'
+    CasasDecimais.Aliquota = 2
+    CasasDecimais.MaskAliquota = ',0.00'
+    ACBrNFe = nfe
+    ImprimeTotalLiquido = True
+    ImprimeNomeFantasia = True
+    FastFile = 
+      'C:\Acbr\Exemplos\ACBrDFe\ACBrNFe\Delphi\Report\NFe\DANFeRetrato.' +
+      'fr3'
+    EspessuraBorda = 1
+    BorderIcon = [biSystemMenu, biMinimize, biMaximize]
+    ThreadSafe = False
+    Left = 483
+    Top = 30
+  end
+end

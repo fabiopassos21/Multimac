@@ -1,0 +1,202 @@
+inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
+  Caption = 'FormFiltroVendaNFE'
+  ClientHeight = 627
+  ClientWidth = 1049
+  FormStyle = fsMDIChild
+  Visible = True
+  WindowState = wsMaximized
+  ExplicitWidth = 1065
+  ExplicitHeight = 666
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    Width = 1049
+    ExplicitTop = -6
+    ExplicitWidth = 1049
+    inherited Label1: TLabel
+      Width = 72
+      Caption = 'Chave da Nota'
+      ExplicitWidth = 72
+    end
+    inherited edtFiltro: TEdit
+      Width = 233
+      ExplicitWidth = 233
+    end
+    inherited btnFiltro: TButton
+      Left = 735
+      Enabled = False
+      ExplicitLeft = 735
+    end
+    inherited Panel2: TPanel
+      Left = 957
+      ExplicitLeft = 957
+      inherited Button1: TButton
+        Left = 64
+        Top = 36
+        Width = 11
+        ExplicitLeft = 64
+        ExplicitTop = 36
+        ExplicitWidth = 11
+      end
+      object AdvGlowButton1: TAdvGlowButton
+        AlignWithMargins = True
+        Left = 10
+        Top = 3
+        Width = 71
+        Height = 82
+        Margins.Left = 10
+        Margins.Right = 10
+        Margins.Bottom = 10
+        Align = alClient
+        NotesFont.Charset = DEFAULT_CHARSET
+        NotesFont.Color = clWindowText
+        NotesFont.Height = -11
+        NotesFont.Name = 'Tahoma'
+        NotesFont.Style = []
+        Picture.Data = {
+          89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+          DE000000097048597300000B1300000B1301009A9C180000020F49444154789C
+          E59BCB4E03310C45B3429D1F435D944F4502B1A8F832C40A128AA56A1E992473
+          6D5FAB57F2AECAF89C026D129C523DCFB9DE734D3BAF63CC53AED75C2FA30B14
+          F8AF5C3FB93E532C0905FE23DD7AFF4E0312EEE1A5A248B88797EA92B0061F45
+          C21A7C97841A3CBB841A7C9384167856092DF055093DF06C127AE057258CC0B3
+          4818815F48781B5C40EA9AEBA40CBA96D3FFB38FF45ED80F59F4FA4940F57C42
+          2F6821010E8F5E5853821A3CFA011A12D4E1D10F424A3083473F1021C11C1EFD
+          E02312DCE0D10D8C4870874737D22381061EDD508B043A7874633509B4F0E806
+          D724D0C3A31B9D14D634DB94212584839720B6A357D01A1EDBF1BF20DEBD70EF
+          FC3C5E1228E025D612A8E025561228E125DA12A8E1255A1242C04BD01242C14B
+          501242C297200530DC407545E357208C04CD3F82F4122C3E066925587E11A293
+          E0F155984682E766C85D02C376D84DC2431F88208FB1186EA0BAA27186174682
+          E60126BD048BD35B5A099647D774123CCEED6924785E5AB84B60B8B17193C000
+          8FEEA55902133CBAA75D098CF0E8DE362530C3A37B5C4888008FEE75422F68B9
+          23834A78F87F973F3A30E17969717460E2220B8D8ECC30DCD88C8ECC5CE60BF5
+          0E4D31C04B7A87A616F092D6B139267849EBD8DC26BC646F7092115EB23738B9
+          0B2FD91A9D6586976C8DCE36C34BE6C3D311E025F3E1E96E78C939DD3E2B23C1
+          4B4ACFA5F773ED45BFFF9EA0456BBDBC240000000049454E44AE426082}
+        Rounded = True
+        ShowCaption = False
+        TabOrder = 1
+        Appearance.BorderColor = 10070188
+        Appearance.BorderColorHot = 10079963
+        Appearance.BorderColorDown = 4548219
+        Appearance.BorderColorChecked = 13744549
+        Appearance.Color = clWhite
+        Appearance.ColorTo = 14675440
+        Appearance.ColorChecked = 11918331
+        Appearance.ColorCheckedTo = 7915518
+        Appearance.ColorDisabled = 15921906
+        Appearance.ColorDisabledTo = 15921906
+        Appearance.ColorDown = 7778289
+        Appearance.ColorDownTo = 4296947
+        Appearance.ColorHot = 15465983
+        Appearance.ColorHotTo = 11332863
+        Appearance.ColorMirror = 14675440
+        Appearance.ColorMirrorTo = 14675440
+        Appearance.ColorMirrorHot = 5888767
+        Appearance.ColorMirrorHotTo = 10807807
+        Appearance.ColorMirrorDown = 946929
+        Appearance.ColorMirrorDownTo = 5021693
+        Appearance.ColorMirrorChecked = 10480637
+        Appearance.ColorMirrorCheckedTo = 5682430
+        Appearance.ColorMirrorDisabled = 11974326
+        Appearance.ColorMirrorDisabledTo = 15921906
+        Appearance.GradientHot = ggVertical
+        Appearance.GradientMirrorHot = ggVertical
+        Appearance.GradientDown = ggVertical
+        Appearance.GradientMirrorDown = ggVertical
+        Appearance.GradientChecked = ggVertical
+        Appearance.TextColorDisabled = 13948116
+        UIStyle = tsWhidbey
+        ExplicitTop = 1
+      end
+    end
+    object Button2: TButton
+      Left = 654
+      Top = 30
+      Width = 75
+      Height = 29
+      Caption = 'Listar'
+      TabOrder = 3
+      OnClick = Button2Click
+    end
+  end
+  object grid: TStringGrid [1]
+    Left = 0
+    Top = 97
+    Width = 1049
+    Height = 530
+    Align = alClient
+    PopupMenu = PopupMenu1
+    TabOrder = 1
+    ExplicitLeft = 8
+    ExplicitTop = 99
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 440
+    Top = 144
+    object ImprimirNFE1: TMenuItem
+      Caption = 'Copiar Chave XML'
+      OnClick = ImprimirNFE1Click
+    end
+    object ImprimirDANFE1: TMenuItem
+      Caption = 'Imprimir DANFE'
+      OnClick = ImprimirDANFE1Click
+    end
+  end
+  object nfe: TACBrNFe
+    Configuracoes.Geral.SSLLib = libCustom
+    Configuracoes.Geral.SSLCryptLib = cryWinCrypt
+    Configuracoes.Geral.SSLHttpLib = httpOpenSSL
+    Configuracoes.Geral.SSLXmlSignLib = xsMsXml
+    Configuracoes.Geral.FormatoAlerta = 'TAG:%TAGNIVEL% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.'
+    Configuracoes.Arquivos.PathSalvar = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\'
+    Configuracoes.Arquivos.PathSchemas = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\'
+    Configuracoes.Arquivos.SepararPorCNPJ = True
+    Configuracoes.Arquivos.OrdenacaoPath = <
+      item
+        Item = opNenhum
+      end>
+    Configuracoes.Arquivos.SepararPorAno = True
+    Configuracoes.Arquivos.SalvarEvento = True
+    Configuracoes.Arquivos.PathNFe = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\Docs'
+    Configuracoes.WebServices.UF = 'SP'
+    Configuracoes.WebServices.AguardarConsultaRet = 0
+    Configuracoes.WebServices.QuebradeLinha = '|'
+    Configuracoes.RespTec.IdCSRT = 0
+    DANFE = ACBrNFeDANFEFR1
+    Left = 864
+    Top = 24
+  end
+  object ACBrNFeDANFEFR1: TACBrNFeDANFEFR
+    MostraSetup = True
+    Sistema = 'Projeto ACBr - www.projetoacbr.com.br'
+    MargemInferior = 0.800000000000000000
+    MargemSuperior = 0.800000000000000000
+    MargemEsquerda = 0.600000000000000000
+    MargemDireita = 0.510000000000000000
+    ExpandeLogoMarcaConfig.Altura = 0
+    ExpandeLogoMarcaConfig.Esquerda = 0
+    ExpandeLogoMarcaConfig.Topo = 0
+    ExpandeLogoMarcaConfig.Largura = 0
+    ExpandeLogoMarcaConfig.Dimensionar = False
+    ExpandeLogoMarcaConfig.Esticar = True
+    CasasDecimais.Formato = tdetInteger
+    CasasDecimais.qCom = 2
+    CasasDecimais.vUnCom = 2
+    CasasDecimais.MaskqCom = ',0.00'
+    CasasDecimais.MaskvUnCom = ',0.00'
+    CasasDecimais.Aliquota = 2
+    CasasDecimais.MaskAliquota = ',0.00'
+    ACBrNFe = nfe
+    ImprimeTotalLiquido = True
+    ImprimeNomeFantasia = True
+    FastFile = 
+      'C:\Acbr\Exemplos\ACBrDFe\ACBrNFe\Delphi\Report\NFe\DANFeRetrato.' +
+      'fr3'
+    EspessuraBorda = 1
+    BorderIcon = [biSystemMenu, biMinimize, biMaximize]
+    ThreadSafe = False
+    Left = 899
+    Top = 22
+  end
+end
