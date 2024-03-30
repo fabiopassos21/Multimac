@@ -1,0 +1,234 @@
+﻿unit uFomMain;
+
+interface
+uses
+  Windows, SysUtils, Classes, Graphics, Controls, Forms,
+  Dialogs, AdvToolBar, AdvToolBarStylers, AdvPreviewMenu,
+  AdvPreviewMenuStylers, AdvShapeButton, AdvOfficeStatusBar,
+  AdvOfficeStatusBarStylers, AdvGlowButton, uFormCadastroCidade,
+  uFormCadastroCliente, uFormCadastroEstado, uFormFiltroClientes,
+  uFormCadastroFornecedor, uFormFiltroFornecedores, uFormFiltroProdutos,
+  uFormCadastroProduto, UFormEtiqueta, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.DBCtrls, Vcl.Buttons, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  AdvGlassButton, Vcl.ExtCtrls, Vcl.Imaging.pngimage, CurvyControls, AdvPanel,
+  RTFLabel,uFormLogin, Vcl.ComCtrls, Vcl.Imaging.jpeg, Vcl.WinXPickers,shellapi;
+
+type
+  TFormMain = class(TAdvToolBarForm)
+    AdvPanel2: TAdvPanel;
+    AdvOfficeStatusBarOfficeStyler1: TAdvOfficeStatusBarOfficeStyler;
+    AdvToolBarOfficeStyler1: TAdvToolBarOfficeStyler;
+    fp: TImage;
+    LinkLabel1: TLinkLabel;
+    LinkLabel2: TLinkLabel;
+    LinkLabel3: TLinkLabel;
+    FDQRYProprio: TFDQuery;
+    DataSource1: TDataSource;
+    FDQRYProprioCNPJ_CPF: TWideStringField;
+    DBEdit1: TDBEdit;
+    LinkLabel4: TLinkLabel;
+    AdvPanel1: TAdvPanel;
+    AdvPanelStyler1: TAdvPanelStyler;
+    CAIXA: TAdvGlowButton;
+    AdvGlowButton1: TAdvGlowButton;
+    AdvGlowButton2: TAdvGlowButton;
+    AdvGlowButton3: TAdvGlowButton;
+    AdvGlowButton4: TAdvGlowButton;
+    AdvGlowButton5: TAdvGlowButton;
+    AdvGlowButton6: TAdvGlowButton;
+    AdvGlowButton7: TAdvGlowButton;
+    AdvGlowButton8: TAdvGlowButton;
+    AdvGlowButton9: TAdvGlowButton;
+    Label1: TLabel;
+    LinkLabel5: TLinkLabel;
+    AdvGlowButton10: TAdvGlowButton;
+    procedure AdvGlowButton3Click(Sender: TObject);
+    procedure AdvGlowButton1Click(Sender: TObject);
+    procedure AdvGlowButton2Click(Sender: TObject);
+    procedure btnCadastroFornecedorClick(Sender: TObject);
+    procedure btnFornecedorClick(Sender: TObject);
+    procedure btnProdutosClick(Sender: TObject);
+    procedure btnCadastroProdutoClick(Sender: TObject);
+    procedure AdvGlowButton6Click(Sender: TObject);
+    procedure btnFiltroClientesClick(Sender: TObject);
+    procedure btnFiltroVendasClick(Sender: TObject);
+    procedure btnFiltroUsuáriosClick(Sender: TObject);
+    procedure btnCadastroUsuarioClick(Sender: TObject);
+    procedure AdvGlowButton8Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure image4Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure AdvShapeButton1Click(Sender: TObject);
+    procedure AdvGlowButton4Click(Sender: TObject);
+    procedure AdvGlowButton5Click(Sender: TObject);
+    procedure CAIXAClick(Sender: TObject);
+    procedure AdvGlowButton9Click(Sender: TObject);
+    procedure AdvGlowButton10Click(Sender: TObject);
+
+
+
+
+  private
+    { Private declarations }
+  protected
+    { Protected declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormMain: TFormMain;
+   HorarioLimite:TDateTime;
+   url:string;
+   horario:TDateTime;
+implementation
+
+{$R *.dfm}
+
+uses uFormCadastroVenda, uBiblioteca, uFormFiltroVendas, uFormFiltroUsuario,
+  uFormCadastroUsuario,  uFormProprio, uFormPreProprio,
+  UFormFiltroVendaNFE, uDmDados, UFormAbertura, uFormCadastroCFOP,
+  uFormPreCadastroCFOP;
+
+
+procedure TFormMain.AdvGlowButton10Click(Sender: TObject);
+begin
+    ShowForm(TFormPreCadastroCFOP,formcadastrocfop);
+end;
+
+Procedure TFormMain.AdvGlowButton1Click(Sender: TObject);
+begin
+  ShowForm(TFormAberturaCaixa, formaberturacaixa);
+end;
+
+procedure TFormMain.AdvGlowButton2Click(Sender: TObject);
+begin
+  showform(TFormCadastroVenda, formcadastrovenda);
+end;
+
+procedure TFormMain.AdvGlowButton3Click(Sender: TObject);
+begin
+  showform(TFormFiltroClientes, FormFiltroClientes);
+end;
+
+procedure TFormMain.AdvGlowButton4Click(Sender: TObject);
+begin
+     showform(TFormFiltroProdutos, formfiltroprodutos);
+end;
+
+procedure TFormMain.AdvGlowButton5Click(Sender: TObject);
+begin
+      ShowForm(tformfiltrovendanfe,formfiltrovendanfe);
+end;
+
+procedure TFormMain.AdvGlowButton6Click(Sender: TObject);
+begin
+ ShowForm(TFormFiltroUsuario,formfiltrousuario);
+end;
+
+procedure TFormMain.AdvGlowButton8Click(Sender: TObject);
+begin
+   ShowForm(TFormEtiqueta,formetiqueta);
+end;
+
+
+
+procedure TFormMain.AdvGlowButton9Click(Sender: TObject);
+begin
+
+   showform(TFormFiltroFornecedores,FormFiltroFornecedores);
+
+
+end;
+
+procedure TFormMain.AdvShapeButton1Click(Sender: TObject);
+begin
+
+ url:='https://api.whatsapp.com/send?phone=551438788380&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento%20para%20minha%20empresa.%20';
+ shellexecute(0,'open',PChar(url),nil,nil,SW_NORMAL);
+
+
+
+end;
+
+procedure TFormMain.btnCadastroFornecedorClick(Sender: TObject);
+begin
+  ShowModalForm(TFormCadastroFornecedor, FormCadastroFornecedor);
+end;
+
+procedure TFormMain.btnCadastroProdutoClick(Sender: TObject);
+begin
+  ShowModalForm(TFormCadastroProduto, FormCadastroProduto);
+end;
+
+procedure TFormMain.btnCadastroUsuarioClick(Sender: TObject);
+begin
+  ShowModalForm(TFormCadastroUsuario, FormCadastroUsuario);
+end;
+
+procedure TFormMain.btnFiltroClientesClick(Sender: TObject);
+begin
+  ShowForm(TFormFiltroClientes, FormFiltroClientes);
+end;
+
+procedure TFormMain.btnFiltroUsuáriosClick(Sender: TObject);
+begin
+  ShowForm(TFormFiltroUsuario, FormFiltroUsuario);
+end;
+
+procedure TFormMain.btnFiltroVendasClick(Sender: TObject);
+begin
+  ShowForm(TFormFiltroVendas, FormFiltroVendas);
+end;
+
+procedure TFormMain.btnFornecedorClick(Sender: TObject);
+begin
+  ShowForm(TFormFiltroFornecedores, FormFiltroFornecedores);
+end;
+
+procedure TFormMain.btnProdutosClick(Sender: TObject);
+begin
+  ShowForm(TFormFiltroProdutos, FormFiltroProdutos);
+end;
+
+
+
+procedure TFormMain.CAIXAClick(Sender: TObject);
+begin
+ showform(TFormPreProprio,FormPreProprio);
+end;
+
+procedure TFormMain.FormCreate(Sender: TObject);
+begin
+//ShowModalForm(TFormLogin, FormLogin);
+  LinkLabel4.caption:=DBEdit1.Text;
+end;
+
+
+
+
+
+procedure TFormMain.FormShow(Sender: TObject);
+
+var
+  hora, minuto, segundo, msec: Word;
+begin
+  DecodeTime(Now, hora, minuto, segundo, msec);
+
+  if hora >= 19 then begin
+    Label1.Caption := '(14)99727-1534';
+  end
+  else begin
+    Label1.Caption := '(14)3879-8010';
+  end;
+end;
+
+Procedure TFormMain.image4Click(Sender: TObject);
+begin
+ WindowState := wsNormal;
+
+end;
+
+end.

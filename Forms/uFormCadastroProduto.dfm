@@ -1,7 +1,9 @@
 inherited FormCadastroProduto: TFormCadastroProduto
   Caption = 'Cadastro de produto'
-  ClientHeight = 370
-  ExplicitHeight = 399
+  ClientHeight = 327
+  ClientWidth = 800
+  ExplicitWidth = 806
+  ExplicitHeight = 356
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel [0]
@@ -95,7 +97,9 @@ inherited FormCadastroProduto: TFormCadastroProduto
     FocusControl = DBEdit3
   end
   inherited pnCabecalho: TPanel
+    Width = 800
     TabOrder = 9
+    ExplicitWidth = 800
   end
   object DBEdit1: TDBEdit [13]
     Left = 8

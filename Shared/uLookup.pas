@@ -24,6 +24,8 @@ type
     fdQryProdutosID_PRODUTO: TIntegerField;
     fdQryProdutosDESCRICAO: TWideStringField;
     fdQryProdutosV_UNITARIO: TSingleField;
+    FDNatureza: TFDQuery;
+    DSNATUREZA: TDataSource;
   private
     { Private declarations }
   public

@@ -12,7 +12,6 @@ inherited FormFiltroProdutos: TFormFiltroProdutos
   inherited Panel1: TPanel
     Width = 970
     Height = 113
-    ExplicitTop = -6
     ExplicitWidth = 970
     ExplicitHeight = 113
     inherited Label1: TLabel
@@ -74,8 +73,9 @@ inherited FormFiltroProdutos: TFormFiltroProdutos
       Left = 878
       Top = 31
       Height = 81
-      ExplicitLeft = 881
-      ExplicitTop = -4
+      ExplicitLeft = 878
+      ExplicitTop = 31
+      ExplicitHeight = 81
       inherited Button1: TButton
         Top = 0
         Visible = False
@@ -150,9 +150,8 @@ inherited FormFiltroProdutos: TFormFiltroProdutos
         Appearance.GradientChecked = ggVertical
         Appearance.TextColorDisabled = 13948116
         UIStyle = tsWhidbey
-        ExplicitLeft = 18
-        ExplicitTop = 18
-        ExplicitHeight = 46
+        ExplicitTop = 45
+        ExplicitHeight = 26
       end
     end
     object edtDescricao: TEdit

@@ -1,0 +1,94 @@
+unit uDmDados;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB,
+  FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client,
+  uFormConfigBanco, uBiblioteca, Vcl.Forms, Datasnap.DBClient;
+
+type
+  TdmDados = class(TDataModule)
+    fdCon: TFDConnection;
+    cdsitens: TClientDataSet;
+    cdsitenscodigo: TStringField;
+    cdsitensitem: TIntegerField;
+    cdsitensdescricao: TStringField;
+    cdsitensvalor_unitario: TCurrencyField;
+    cdsitensQUANTIDADE: TCurrencyField;
+    cdsitenssub_total: TCurrencyField;
+    cdsitensTOTAL_COMPRA: TAggregateField;
+    procedure DataModuleCreate(Sender: TObject);
+    procedure cdsitensCalcFields(DataSet: TDataSet);
+  private
+    procedure CarregaBanco;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmDados: TdmDados;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+procedure TdmDados.CarregaBanco;
+begin
+  try
+    fdCon.Params.Clear;
+    fdCon.Params.Add('User_Name=sysdba');
+    fdCon.Params.Add('Password=masterkey');
+    fdCon.Params.Add('Protocol=TCPIP');
+    fdCon.Params.Add('Server=' + GetValorIni(ExtractFilePath(Application.ExeName) + 'config.ini', 'CONFIGURACAO', 'SERVER'));
+    fdCon.Params.Add('CharacterSet=utF8');
+    fdCon.Params.Add('Database=' + GetValorIni(ExtractFilePath(Application.ExeName) + 'config.ini', 'CONFIGURACAO', 'LOCAL_DB'));
+    fdCon.Params.Add('DriverID=FB');
+    fdCon.Connected := True;
+  except
+    on E: Exception do begin
+      MsgAtencao(E.Message);
+      ShowModalForm(TFormConfigBanco, FormConfigBanco);
+    end;
+  end;
+end;
+
+procedure TdmDados.cdsitensCalcFields(DataSet: TDataSet);
+begin
+// cdsitenssub_total.asCurrency := (cdsitensvalor_unitario.ascurrency * cdsitensquantidade.ascurrency);
+end;
+
+procedure TdmDados.DataModuleCreate(Sender: TObject);
+begin
+  CarregaBanco;
+  cdsitens.Append;
+  CDSITENS.OPEN;
+  cdsitenscodigo.asString:='0006';
+cdsitensitem.asInteger:=2;
+cdsitensdescricao.asstring:='COXA E SOBRE COXA SADIA BIO BD 1KG';
+CDSITENSVALOr_UNITARIO.ASCURRENCY:=15.50;
+CDSITENSQUANTIDADE.ASCURRENCY:=1;
+CDSITENS.POST;
+CDSITENS.APPEND;
+CDSITENSCODIGO.ASSTRING:='0009';
+CDSItensitem.ASINTEGER:=2;
+CDSITENSDESCRICAO.asstring:='NUGGETS SADIA TOP';
+CDSITENSVALOR_UNITARIO.ASCURRENCY:=5.00;
+CDSITENSQUANTIDADE.ASCURRENCY:=1;
+CDSITENS.POST;
+CDSITENS.APPEND;
+CDSITENSCODIGO.ASSTRING:='0010';
+CDSITENSITEM.ASINTEGER:=2;
+CDSITENSDESCRICAO.ASsTRING:='SALGADINHO SADIA';
+CDSITENSvALOR_UNITARIO.ASCURRENCY:=2.00;
+CDSItENSQUANTIDADE.ASCURRENCY:=1;
+CDSITENS.POST;
+CDSITENS.OPEN;
+end;
+
+end.

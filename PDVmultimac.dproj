@@ -212,16 +212,36 @@
             <Form>FormCertificado</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Forms\uFormCaixa.pas">
-            <Form>FormCaixa</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="Forms\UFormFiltroVendaNFE.pas">
             <Form>FormFiltroVendaNFE</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Forms\UFormAbertura.pas">
             <Form>FormAberturaCaixa</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Forms\uFormCadastroCFOP.pas">
+            <Form>FormCadastroCFOP</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Forms\uFormPreCadastroCFOP.pas">
+            <Form>FormPreCadastroCFOP</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Forms\uFormCaixaPDV.pas">
+            <Form>FormCaixaPDV</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Forms\uFormPagamento.pas">
+            <Form>FormCaixaPagamento</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Forms\UFormPagamentoDinheiro.pas">
+            <Form>FormPagamentoDInheiro</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Forms\UFormCaixaIdentificarCliente.pas">
+            <Form>FormCaixaIdentificarCliente</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Debug">

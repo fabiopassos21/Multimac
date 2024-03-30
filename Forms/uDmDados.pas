@@ -7,12 +7,21 @@ uses
   FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB,
   FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client,
-  uFormConfigBanco, uBiblioteca, Vcl.Forms;
+  uFormConfigBanco, uBiblioteca, Vcl.Forms, Datasnap.DBClient;
 
 type
   TdmDados = class(TDataModule)
     fdCon: TFDConnection;
+    cdsItens: TClientDataSet;
+    cdsItenscodigo: TStringField;
+    cdsItensitem: TIntegerField;
+    cdsItensdescricao: TStringField;
+    cdsItensvalorunitario: TCurrencyField;
+    cdsItensquantidade: TCurrencyField;
+    cdsItenssubtotal: TCurrencyField;
+    cdsItenstotalcompra: TAggregateField;
     procedure DataModuleCreate(Sender: TObject);
+    procedure cdsitensCalcFields(DataSet: TDataSet);
   private
     procedure CarregaBanco;
     { Private declarations }
@@ -49,9 +58,38 @@ begin
   end;
 end;
 
+procedure TdmDados.cdsitensCalcFields(DataSet: TDataSet);
+begin
+// cdsitenssub_total.asCurrency := (cdsitensvalor_unitario.ascurrency * cdsitensquantidade.ascurrency);
+end;
+
 procedure TdmDados.DataModuleCreate(Sender: TObject);
 begin
-  CarregaBanco;
+  cdsItens.Append;
+  cdsItenscodigo.AsString := '0006';
+  cdsItensItem.AsInteger := 1;
+  cdsItensdescricao.AsString := 'COXA E SOBRE COXA SADIA BIO BD 1KG';
+  cdsItensvalorunitario.AsCurrency := 1650;
+  cdsItensquantidade.AsCurrency := 1;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString := '0008';
+  cdsItensItem.AsInteger := 2;
+  cdsItensdescricao.AsString := 'HOT POCKET SADIA X BURGUER MAIONESE GRILL 145G';
+  cdsItensvalorunitario.AsCurrency := 560;
+  cdsItensquantidade.AsCurrency := 1;
+  cdsItens.Post;
+
+  cdsItens.Append;
+  cdsItenscodigo.AsString := '0003';
+  cdsItensItem.AsInteger := 3;
+  cdsItensdescricao.AsString := 'STEAK DE FRANGO SADIA 100G';
+  cdsItensvalorunitario.AsCurrency := 250;
+  cdsItensquantidade.AsCurrency := 1;
+  cdsItens.Post;
+
+  cdsItens.Open;
 end;
 
 end.

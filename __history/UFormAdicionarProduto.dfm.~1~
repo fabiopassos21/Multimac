@@ -1,0 +1,65 @@
+object FormAdicionarProduto: TFormAdicionarProduto
+  Left = 0
+  Top = 0
+  Caption = 'FormAdicionarProduto'
+  ClientHeight = 263
+  ClientWidth = 901
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 68
+    Width = 901
+    Height = 195
+    Align = alBottom
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 901
+    Height = 68
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Listar Produtos e ADICIONAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    ExplicitLeft = 528
+    ExplicitTop = 56
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+  end
+  object FDQuery1: TFDQuery
+    Left = 720
+    Top = 48
+  end
+  object FDQuery2: TFDQuery
+    Left = 656
+    Top = 48
+  end
+  object DataSource1: TDataSource
+    Left = 656
+    Top = 120
+  end
+  object DataSource2: TDataSource
+    Left = 712
+    Top = 128
+  end
+end

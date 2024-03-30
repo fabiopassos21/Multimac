@@ -33,7 +33,6 @@ type
     AdvPanelStyler1: TAdvPanelStyler;
     CAIXA: TAdvGlowButton;
     AdvGlowButton1: TAdvGlowButton;
-    TimePicker1: TTimePicker;
     AdvGlowButton2: TAdvGlowButton;
     AdvGlowButton3: TAdvGlowButton;
     AdvGlowButton4: TAdvGlowButton;
@@ -44,6 +43,7 @@ type
     AdvGlowButton9: TAdvGlowButton;
     Label1: TLabel;
     LinkLabel5: TLinkLabel;
+    AdvGlowButton10: TAdvGlowButton;
     procedure AdvGlowButton3Click(Sender: TObject);
     procedure AdvGlowButton1Click(Sender: TObject);
     procedure AdvGlowButton2Click(Sender: TObject);
@@ -65,6 +65,7 @@ type
     procedure AdvGlowButton5Click(Sender: TObject);
     procedure CAIXAClick(Sender: TObject);
     procedure AdvGlowButton9Click(Sender: TObject);
+    procedure AdvGlowButton10Click(Sender: TObject);
 
 
 
@@ -81,16 +82,23 @@ var
   FormMain: TFormMain;
    HorarioLimite:TDateTime;
    url:string;
+   horario:TDateTime;
 implementation
 
 {$R *.dfm}
 
 uses uFormCadastroVenda, uBiblioteca, uFormFiltroVendas, uFormFiltroUsuario,
   uFormCadastroUsuario,  uFormProprio, uFormPreProprio,
-  UFormFiltroVendaNFE, uDmDados, UFormAbertura;
+  UFormFiltroVendaNFE, uDmDados, UFormAbertura, uFormCadastroCFOP,
+  uFormPreCadastroCFOP, uFormCaixaPDV, UFormAdicionarProduto;
 
 
-procedure TFormMain.AdvGlowButton1Click(Sender: TObject);
+procedure TFormMain.AdvGlowButton10Click(Sender: TObject);
+begin
+    ShowForm(TFormCaixaPDV,formcaixapdv);
+end;
+
+Procedure TFormMain.AdvGlowButton1Click(Sender: TObject);
 begin
   ShowForm(TFormAberturaCaixa, formaberturacaixa);
 end;
@@ -194,7 +202,7 @@ end;
 
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
- //ShowModalForm(TFormLogin, FormLogin);
+//ShowModalForm(TFormLogin, FormLogin);
   LinkLabel4.caption:=DBEdit1.Text;
 end;
 
@@ -204,19 +212,17 @@ end;
 
 procedure TFormMain.FormShow(Sender: TObject);
 
+var
+  hora, minuto, segundo, msec: Word;
 begin
-HorarioLimite := EncodeTime(18, 0, 0, 0);
-if TimePicker1.Time > HorarioLimite then begin
-  Label1.Caption:='(14)99727-1534';
-end
-ELSE
-begin
-  label1.Caption:='(14)3879-8010';
-end;
+  DecodeTime(Now, hora, minuto, segundo, msec);
 
-
-
-
+  if hora >= 19 then begin
+    Label1.Caption := '(14)99727-1534';
+  end
+  else begin
+    Label1.Caption := '(14)3879-8010';
+  end;
 end;
 
 Procedure TFormMain.image4Click(Sender: TObject);

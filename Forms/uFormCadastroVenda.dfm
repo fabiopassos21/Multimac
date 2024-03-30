@@ -11,7 +11,7 @@ inherited FormCadastroVenda: TFormCadastroVenda
   TextHeight = 13
   inherited pnCabecalho: TPanel
     Width = 1254
-    ExplicitWidth = 974
+    ExplicitWidth = 1254
     object btnImprimir: TBitBtn
       Left = 607
       Top = 0
@@ -29,8 +29,6 @@ inherited FormCadastroVenda: TFormCadastroVenda
     Height = 469
     Align = alClient
     TabOrder = 1
-    ExplicitWidth = 974
-    ExplicitHeight = 412
     object Label4: TLabel
       Left = 8
       Top = 16
@@ -323,7 +321,6 @@ inherited FormCadastroVenda: TFormCadastroVenda
     Height = 64
     Align = alTop
     TabOrder = 2
-    ExplicitWidth = 974
     object Label1: TLabel
       Left = 8
       Top = 8
@@ -331,22 +328,6 @@ inherited FormCadastroVenda: TFormCadastroVenda
       Height = 13
       Caption = 'ID_VENDA_CAB'
       FocusControl = DBEdit1
-    end
-    object Label3: TLabel
-      Left = 544
-      Top = 6
-      Width = 27
-      Height = 13
-      Caption = 'DATA'
-      FocusControl = DBEdit3
-    end
-    object Label5: TLabel
-      Left = 695
-      Top = 6
-      Width = 88
-      Height = 13
-      Caption = 'DATA_FATURADO'
-      FocusControl = DBEdit5
     end
     object Label14: TLabel
       Left = 119
@@ -371,7 +352,7 @@ inherited FormCadastroVenda: TFormCadastroVenda
     end
     object DBEdit1: TDBEdit
       Left = 8
-      Top = 24
+      Top = 25
       Width = 105
       Height = 21
       DataField = 'ID_VENDA_CAB'
@@ -380,22 +361,24 @@ inherited FormCadastroVenda: TFormCadastroVenda
       TabOrder = 3
     end
     object DBEdit3: TDBEdit
-      Left = 544
-      Top = 25
+      Left = 1024
+      Top = -21
       Width = 130
       Height = 21
       DataField = 'DATA'
       DataSource = dsCadastro
       TabOrder = 0
+      Visible = False
     end
     object DBEdit5: TDBEdit
-      Left = 695
-      Top = 25
+      Left = 1079
+      Top = -15
       Width = 134
       Height = 21
       DataField = 'DATA_FATURADO'
       DataSource = dsCadastro
       TabOrder = 1
+      Visible = False
     end
     object DBCheckBox1: TDBCheckBox
       Left = 843
@@ -410,8 +393,8 @@ inherited FormCadastroVenda: TFormCadastroVenda
       ValueUnchecked = 'N'
     end
     object Button4: TButton
-      Left = 350
-      Top = 18
+      Left = 421
+      Top = 22
       Width = 75
       Height = 25
       Caption = 'Consultar'
@@ -428,7 +411,7 @@ inherited FormCadastroVenda: TFormCadastroVenda
     object DBEdit2: TDBEdit
       Left = 205
       Top = 25
-      Width = 139
+      Width = 188
       Height = 21
       DataField = 'RAZAO_SOCIAL'
       DataSource = DataSource2
@@ -443,9 +426,6 @@ inherited FormCadastroVenda: TFormCadastroVenda
     Height = 84
     Align = alBottom
     TabOrder = 3
-    ExplicitLeft = -1
-    ExplicitTop = 522
-    ExplicitWidth = 974
     object Label11: TLabel
       Left = 301
       Top = 16
@@ -580,8 +560,6 @@ inherited FormCadastroVenda: TFormCadastroVenda
       Caption = 'Gerar Nota'
       TabOrder = 3
       OnClick = Button3Click
-      ExplicitLeft = 902
-      ExplicitTop = 12
     end
     object Button5: TButton
       AlignWithMargins = True
@@ -593,12 +571,10 @@ inherited FormCadastroVenda: TFormCadastroVenda
       Caption = 'Configurar Certificado'
       TabOrder = 4
       OnClick = Button5Click
-      ExplicitTop = 32
-      ExplicitHeight = 48
     end
     object btnImprimirNFe: TButton
-      Left = 920
-      Top = 6
+      Left = 944
+      Top = 30
       Width = 74
       Height = 27
       Caption = 'Imprimir NFe'
@@ -618,7 +594,7 @@ inherited FormCadastroVenda: TFormCadastroVenda
     UpdateObject = nil
     SQL.Strings = (
       'SELECT * FROM VENDA_CAB')
-    Left = 880
+    Left = 1064
     Top = 264
     object fdQryCadastroID_VENDA_CAB: TIntegerField
       AutoGenerateValue = arAutoInc
@@ -649,20 +625,23 @@ inherited FormCadastroVenda: TFormCadastroVenda
     end
   end
   inherited fdUpdCadastro: TFDUpdateSQL
-    Left = 880
-    Top = 224
+    Left = 1064
+    Top = 208
   end
   inherited fdTransaction: TFDTransaction
-    Left = 872
-    Top = 184
+    Left = 1064
+    Top = 168
   end
   inherited dsCadastro: TDataSource
-    Left = 888
-    Top = 336
+    Left = 1064
+    Top = 320
   end
   inherited fdQryCodigo: TFDQuery
-    Left = 816
-    Top = 0
+    Active = True
+    SQL.Strings = (
+      'select * from proprio')
+    Left = 560
+    Top = 48
   end
   object fdQryItens: TFDQuery
     AfterInsert = fdQryItensAfterInsert
@@ -736,13 +715,13 @@ inherited FormCadastroVenda: TFormCadastroVenda
   end
   object dsItens: TDataSource
     DataSet = fdQryItens
-    Left = 785
-    Top = 176
+    Left = 857
+    Top = 192
   end
   object fdtItens: TFDTransaction
     Connection = dmDados.fdCon
-    Left = 896
-    Top = 384
+    Left = 1064
+    Top = 376
   end
   object frVenda: TfrxReport
     Version = '2024.1.6'
@@ -1320,8 +1299,8 @@ inherited FormCadastroVenda: TFormCadastroVenda
   end
   object DataSource1: TDataSource
     DataSet = FDQueryProprio
-    Left = 56
-    Top = 184
+    Left = 128
+    Top = 192
   end
   object FDQRYclientetotal: TFDQuery
     Connection = dmDados.fdCon
@@ -1429,7 +1408,7 @@ inherited FormCadastroVenda: TFormCadastroVenda
     Configuracoes.Geral.SSLHttpLib = httpOpenSSL
     Configuracoes.Geral.SSLXmlSignLib = xsMsXml
     Configuracoes.Geral.FormatoAlerta = 'TAG:%TAGNIVEL% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.'
-    Configuracoes.Arquivos.PathSalvar = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\'
+    Configuracoes.Arquivos.PathSalvar = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\Docs\'
     Configuracoes.Arquivos.PathSchemas = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\'
     Configuracoes.Arquivos.SepararPorCNPJ = True
     Configuracoes.Arquivos.OrdenacaoPath = <
@@ -1444,8 +1423,7 @@ inherited FormCadastroVenda: TFormCadastroVenda
     Configuracoes.WebServices.QuebradeLinha = '|'
     Configuracoes.RespTec.IdCSRT = 0
     DANFE = ACBrNFeDANFEFR1
-    Left = 504
-    Top = 56
+    Left = 976
   end
   object ACBrNFeDANFEFR1: TACBrNFeDANFEFR
     MostraSetup = True
@@ -1476,12 +1454,29 @@ inherited FormCadastroVenda: TFormCadastroVenda
     EspessuraBorda = 1
     BorderIcon = [biSystemMenu, biMinimize, biMaximize]
     ThreadSafe = False
-    Left = 467
-    Top = 54
+    Left = 907
+    Top = 65526
   end
   object OpenDialog1: TOpenDialog
     FileName = 'C:\MultimacPdv-main\MultimacPdv-main\Schemas\Docs'
     Left = 848
     Top = 88
+  end
+  object DSNFEDADOS: TDataSource
+    DataSet = FDQryNFE_dados
+    Left = 1184
+    Top = 168
+  end
+  object FDQryNFE_dados: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'SELECT * from nfe_dados_cliente')
+    Left = 1064
+    Top = 105
+  end
+  object DSFiltro: TDataSource
+    DataSet = FDQueryProprio
+    Left = 552
+    Top = 168
   end
 end

@@ -1,0 +1,164 @@
+object FormPreCadastroCFOP: TFormPreCadastroCFOP
+  Left = 0
+  Top = 0
+  Caption = 'FormPreCadastroCFOP'
+  ClientHeight = 410
+  ClientWidth = 760
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 760
+    Height = 410
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 852
+    ExplicitHeight = 299
+    object Panel2: TPanel
+      Left = 1
+      Top = 1
+      Width = 758
+      Height = 88
+      Align = alTop
+      TabOrder = 0
+      ExplicitWidth = 936
+      object Label1: TLabel
+        AlignWithMargins = True
+        Left = 4
+        Top = 31
+        Width = 140
+        Height = 53
+        Margins.Top = 30
+        Align = alLeft
+        Caption = 'Cadastro CFOP'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = 1
+        ExplicitTop = 1
+        ExplicitHeight = 25
+      end
+      object Button1: TButton
+        Left = 672
+        Top = 32
+        Width = 75
+        Height = 25
+        Caption = 'Novo'
+        TabOrder = 0
+        OnClick = Button1Click
+      end
+    end
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 89
+      Width = 758
+      Height = 320
+      Align = alClient
+      DataSource = FormCadastroCFOP.DataSource1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'ID_CFOP'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'Verdana'
+          Font.Style = []
+          Title.Alignment = taCenter
+          Title.Color = clLime
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -20
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'CFOP'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'Verdana'
+          Font.Style = []
+          Title.Alignment = taCenter
+          Title.Color = clLime
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -20
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NATUREZA'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'Verdana'
+          Font.Style = []
+          Title.Alignment = taCenter
+          Title.Color = clLime
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -20
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'TIPO'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'Verdana'
+          Font.Style = []
+          Title.Alignment = taCenter
+          Title.Color = clLime
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -20
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Visible = True
+        end>
+    end
+  end
+  object DSPRECADSATRO: TDataSource
+    DataSet = FDQryPreCadastroCFOP
+    Left = 880
+    Top = 104
+  end
+  object FDQryPreCadastroCFOP: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'select * from cfop')
+    Left = 872
+    Top = 48
+  end
+end

@@ -460,6 +460,7 @@ object FormCaixa: TFormCaixa
       D298A3C511B1AD162BA087816821651AD11A9A0F22CF86A8D1D16A48E9A8F023
       5A45C79A2351914FFFD9}
     BackgroundPosition = bpStretched
+    BorderColor = clBlack
     Caption.Color = clWhite
     Caption.ColorTo = clNone
     Caption.Font.Charset = DEFAULT_CHARSET
@@ -485,7 +486,6 @@ object FormCaixa: TFormCaixa
     StatusBar.Color = clWhite
     StatusBar.GradientDirection = gdVertical
     Text = ''
-    ExplicitLeft = 8
     FullHeight = 200
     object CurvyPanel2: TCurvyPanel
       AlignWithMargins = True
@@ -511,24 +511,6 @@ object FormCaixa: TFormCaixa
       Color = clWhite
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 1
-      object Label1: TLabel
-        AlignWithMargins = True
-        Left = 16
-        Top = 4
-        Width = 63
-        Height = 26
-        Margins.Left = 15
-        Align = alLeft
-        Caption = 'Cliente:'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -19
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        ExplicitHeight = 23
-      end
     end
     object Panel3: TPanel
       AlignWithMargins = True
@@ -540,72 +522,6 @@ object FormCaixa: TFormCaixa
       Color = clCream
       ParentBackground = False
       TabOrder = 2
-      ExplicitLeft = 6
-      object CurvyPanel1: TCurvyPanel
-        AlignWithMargins = True
-        Left = 16
-        Top = 11
-        Width = 1401
-        Height = 48
-        Hint = 'Digite Ou Bipe o produto'
-        Margins.Left = 15
-        Margins.Top = 10
-        Margins.Right = 15
-        Margins.Bottom = 20
-        Align = alLeft
-        Caption = ''
-        TabOrder = 0
-        object Codigo: TLabel
-          AlignWithMargins = True
-          Left = 10
-          Top = 10
-          Width = 578
-          Height = 28
-          Margins.Left = 10
-          Margins.Top = 10
-          Margins.Right = 10
-          Margins.Bottom = 10
-          Align = alClient
-          BiDiMode = bdRightToLeft
-          Caption = 'Codigo'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -21
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentBiDiMode = False
-          ParentFont = False
-          ExplicitLeft = 524
-          ExplicitWidth = 64
-          ExplicitHeight = 25
-        end
-        object DBEdit1: TDBEdit
-          AlignWithMargins = True
-          Left = 608
-          Top = 10
-          Width = 783
-          Height = 28
-          Margins.Left = 10
-          Margins.Top = 10
-          Margins.Right = 10
-          Margins.Bottom = 10
-          Align = alRight
-          BevelInner = bvNone
-          BevelOuter = bvNone
-          BiDiMode = bdLeftToRight
-          BorderStyle = bsNone
-          DataField = 'ID_PRODUTO'
-          DataSource = DataSource1
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -21
-          Font.Name = 'Tahoma'
-          Font.Style = []
-          ParentBiDiMode = False
-          ParentFont = False
-          TabOrder = 0
-        end
-      end
     end
     object CurvyPanel3: TCurvyPanel
       AlignWithMargins = True
@@ -620,83 +536,6 @@ object FormCaixa: TFormCaixa
       Align = alClient
       Caption = ''
       TabOrder = 3
-      ExplicitTop = 131
     end
-  end
-  object FDQRYproduto: TFDQuery
-    Connection = dmDados.fdCon
-    SQL.Strings = (
-      'select * from produto')
-    Left = 1351
-    Top = 591
-    object FDQRYprodutoID_PRODUTO: TIntegerField
-      FieldName = 'ID_PRODUTO'
-      Origin = 'ID_PRODUTO'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      Required = True
-    end
-    object FDQRYprodutoDESCRICAO: TWideStringField
-      FieldName = 'DESCRICAO'
-      Origin = 'DESCRICAO'
-      Size = 80
-    end
-    object FDQRYprodutoQTD: TSingleField
-      FieldName = 'QTD'
-      Origin = 'QTD'
-    end
-    object FDQRYprodutoCUSTO: TSingleField
-      FieldName = 'CUSTO'
-      Origin = 'CUSTO'
-    end
-    object FDQRYprodutoV_UNITARIO: TSingleField
-      FieldName = 'V_UNITARIO'
-      Origin = 'V_UNITARIO'
-    end
-    object FDQRYprodutoUNIDADE: TWideStringField
-      FieldName = 'UNIDADE'
-      Origin = 'UNIDADE'
-      Size = 4
-    end
-    object FDQRYprodutoPESO_LIQUIDO: TSingleField
-      FieldName = 'PESO_LIQUIDO'
-      Origin = 'PESO_LIQUIDO'
-    end
-    object FDQRYprodutoPESO_BRUTO: TSingleField
-      FieldName = 'PESO_BRUTO'
-      Origin = 'PESO_BRUTO'
-    end
-    object FDQRYprodutoFABRICANTE: TWideStringField
-      FieldName = 'FABRICANTE'
-      Origin = 'FABRICANTE'
-      Size = 60
-    end
-    object FDQRYprodutoMARCA_MODELO: TWideStringField
-      FieldName = 'MARCA_MODELO'
-      Origin = 'MARCA_MODELO'
-      Size = 255
-    end
-    object FDQRYprodutoID_FORNECEDOR: TIntegerField
-      FieldName = 'ID_FORNECEDOR'
-      Origin = 'ID_FORNECEDOR'
-    end
-    object FDQRYprodutoDT_EXCLUIDO: TDateField
-      FieldName = 'DT_EXCLUIDO'
-      Origin = 'DT_EXCLUIDO'
-    end
-    object FDQRYprodutoCODIGO_AUX: TWideStringField
-      FieldName = 'CODIGO_AUX'
-      Origin = 'CODIGO_AUX'
-      Size = 13
-    end
-    object FDQRYprodutoNCM: TWideStringField
-      FieldName = 'NCM'
-      Origin = 'NCM'
-      Size = 13
-    end
-  end
-  object DataSource1: TDataSource
-    DataSet = FDQRYproduto
-    Left = 1359
-    Top = 551
   end
 end

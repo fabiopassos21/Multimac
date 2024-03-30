@@ -2,8 +2,8 @@ object FormProprio: TFormProprio
   Left = 0
   Top = 0
   Caption = 'FormProprio'
-  ClientHeight = 411
-  ClientWidth = 753
+  ClientHeight = 482
+  ClientWidth = 750
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,10 +18,11 @@ object FormProprio: TFormProprio
   object Panel1: TPanel
     Left = 0
     Top = 53
-    Width = 753
-    Height = 358
+    Width = 750
+    Height = 429
     Align = alClient
     TabOrder = 0
+    ExplicitTop = 55
     object Label2: TLabel
       Left = 16
       Top = 52
@@ -162,28 +163,45 @@ object FormProprio: TFormProprio
       Font.Style = []
       ParentFont = False
     end
-    object Label18: TLabel
-      Left = 189
-      Top = 280
-      Width = 83
+    object Label20: TLabel
+      Left = 16
+      Top = 365
+      Width = 29
       Height = 13
-      Caption = 'CERTIFICADORA'
+      Caption = 'SERIE'
+      FocusControl = DBEdit16
     end
-    object Label19: TLabel
-      Left = 337
-      Top = 280
-      Width = 49
+    object Label21: TLabel
+      Left = 158
+      Top = 365
+      Width = 77
       Height = 13
-      Caption = 'VALIDADE'
+      Caption = 'NUMERO_NOTA'
+      FocusControl = DBEdit17
+    end
+    object Label22: TLabel
+      Left = 16
+      Top = 336
+      Width = 92
+      Height = 23
+      Caption = 'Dados NFE'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
     end
     object Panel3: TPanel
       Left = 1
-      Top = 248
-      Width = 751
-      Height = 109
+      Top = 426
+      Width = 748
+      Height = 2
       Align = alBottom
       BevelKind = bkSoft
       TabOrder = 16
+      ExplicitTop = 513
+      ExplicitWidth = 841
     end
     object DBEdit2: TDBEdit
       Left = 16
@@ -330,35 +348,51 @@ object FormProprio: TFormProprio
       DataSource = DSProprio
       TabOrder = 15
     end
-    object Edit1: TEdit
+    object DBEdit16: TDBEdit
       Left = 16
-      Top = 299
-      Width = 121
+      Top = 384
+      Width = 134
       Height = 21
+      DataField = 'SERIE'
+      DataSource = DataSource1
       TabOrder = 17
     end
-    object Edit2: TEdit
-      Left = 182
-      Top = 299
-      Width = 121
+    object DBEdit17: TDBEdit
+      Left = 156
+      Top = 384
+      Width = 134
       Height = 21
+      DataField = 'NUMERO_NOTA'
+      DataSource = DataSource1
       TabOrder = 18
     end
-    object Edit3: TEdit
-      Left = 337
+    object DBEdit19: TDBEdit
+      Left = 16
       Top = 299
-      Width = 121
+      Width = 219
       Height = 21
+      DataField = 'SERIE'
+      DataSource = DSCertificado
       TabOrder = 19
+    end
+    object Button5: TButton
+      Left = 252
+      Top = 297
+      Width = 98
+      Height = 25
+      Caption = 'Gravar'
+      TabOrder = 20
+      OnClick = Button5Click
     end
   end
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 753
+    Width = 750
     Height = 53
     Align = alTop
     TabOrder = 1
+    ExplicitWidth = 1008
     object Button1: TButton
       AlignWithMargins = True
       Left = 97
@@ -384,7 +418,7 @@ object FormProprio: TFormProprio
     end
     object Button3: TButton
       AlignWithMargins = True
-      Left = 627
+      Left = 624
       Top = 4
       Width = 122
       Height = 45
@@ -392,6 +426,20 @@ object FormProprio: TFormProprio
       Caption = 'Configurar Certificado'
       TabOrder = 2
       OnClick = Button3Click
+      ExplicitTop = 2
+    end
+    object Button4: TButton
+      AlignWithMargins = True
+      Left = 531
+      Top = 4
+      Width = 87
+      Height = 45
+      Align = alRight
+      Caption = 'Cadastro CFOP'
+      TabOrder = 3
+      OnClick = Button4Click
+      ExplicitLeft = 624
+      ExplicitTop = 2
     end
   end
   object DSProprio: TDataSource
@@ -420,8 +468,8 @@ object FormProprio: TFormProprio
     UpdateTransaction = FDTransaction2
     SQL.Strings = (
       'select * from confi_certificado')
-    Left = 664
-    Top = 137
+    Left = 648
+    Top = 105
     object FDCertificadoCNPJ: TWideStringField
       FieldName = 'CNPJ'
       Origin = 'CNPJ'
@@ -448,13 +496,13 @@ object FormProprio: TFormProprio
   end
   object FDTransaction2: TFDTransaction
     Connection = dmDados.fdCon
-    Left = 664
-    Top = 176
+    Left = 648
+    Top = 232
   end
   object DSCertificado: TDataSource
     DataSet = FDCertificado
-    Left = 664
-    Top = 97
+    Left = 656
+    Top = 65
   end
   object fdproprio: TFDQuery
     Connection = dmDados.fdCon
@@ -478,5 +526,30 @@ object FormProprio: TFormProprio
     Configuracoes.RespTec.IdCSRT = 0
     Left = 384
     Top = 8
+  end
+  object FDQueryNFE_DADOS: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'select * from nfe_dados_cliente')
+    Left = 640
+    Top = 328
+    object FDQueryNFE_DADOSSERIE: TIntegerField
+      FieldName = 'SERIE'
+      Origin = 'SERIE'
+    end
+    object FDQueryNFE_DADOSNUMERO_NOTA: TIntegerField
+      FieldName = 'NUMERO_NOTA'
+      Origin = 'NUMERO_NOTA'
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQueryNFE_DADOS
+    Left = 648
+    Top = 280
+  end
+  object FDTransaction1: TFDTransaction
+    Connection = dmDados.fdCon
+    Left = 640
+    Top = 392
   end
 end

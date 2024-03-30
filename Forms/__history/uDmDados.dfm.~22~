@@ -1,0 +1,68 @@
+object dmDados: TdmDados
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 249
+  Width = 445
+  object fdCon: TFDConnection
+    Params.Strings = (
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'Port=3050'
+      'CharacterSet=utF8'
+      
+        'Database=C:\MultimacPdv-main\MultimacPdv-main\Banco de dados\DAD' +
+        'OS.FDB'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 152
+    Top = 64
+  end
+  object ClientDataSet1: TClientDataSet
+    PersistDataPacket.Data = {
+      B20000009619E0BD010000001800000005000000000003000000B20006636F64
+      69676F0100490000000100055749445448020002006400046974656D04000100
+      000000000964657363726963616F010049000000010005574944544802000200
+      64000E76616C6F725F756E69746172696F080004000000010007535542545950
+      450200490006004D6F6E6579000A5155414E5449444144450800040000000100
+      07535542545950450200490006004D6F6E6579000000}
+    Active = True
+    Aggregates = <>
+    Params = <>
+    Left = 288
+    Top = 96
+    object ClientDataSet1codigo: TStringField
+      FieldName = 'codigo'
+      Size = 100
+    end
+    object ClientDataSet1item: TIntegerField
+      FieldName = 'item'
+    end
+    object ClientDataSet1descricao: TStringField
+      FieldName = 'descricao'
+      Size = 100
+    end
+    object ClientDataSet1valor_unitario: TCurrencyField
+      FieldName = 'valor_unitario'
+      EditFormat = 'R$#.##0,00'
+    end
+    object ClientDataSet1QUANTIDADE: TCurrencyField
+      FieldName = 'QUANTIDADE'
+      DisplayFormat = '0.000'
+    end
+    object ClientDataSet1sub_total: TCurrencyField
+      FieldKind = fkCalculated
+      FieldName = 'sub_total'
+      EditFormat = 'R$#.##,00'
+      Calculated = True
+    end
+    object ClientDataSet1TOTAL_COMPRA: TAggregateField
+      FieldName = 'TOTAL_COMPRA'
+      Active = True
+      DisplayName = ''
+      Expression = 'sum(valor_unitario*quantidade)'
+    end
+  end
+end

@@ -1,0 +1,105 @@
+unit uFormPagamento;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, AdvGlowButton;
+
+type
+  TFormCaixaPagamento = class(TForm)
+    pnlContainer: TPanel;
+    pnlInformacoes: TPanel;
+    Panel1: TPanel;
+    pnlInfoVenda: TPanel;
+    Shape1: TShape;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Image1: TImage;
+    Label1: TLabel;
+    Panel5: TPanel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Panel6: TPanel;
+    Label4: TLabel;
+    edtDesconto: TEdit;
+    Panel7: TPanel;
+    Label5: TLabel;
+    Edit1: TEdit;
+    Panel8: TPanel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Panel9: TPanel;
+    Panel10: TPanel;
+    Label8: TLabel;
+    Edit2: TEdit;
+    Panel11: TPanel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Panel12: TPanel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Panel2: TPanel;
+    pnlFormasPagamento: TPanel;
+    Panel13: TPanel;
+    Panel14: TPanel;
+    Shape2: TShape;
+    Panel15: TPanel;
+    Panel16: TPanel;
+    Panel17: TPanel;
+    pnlListaPagamentos: TPanel;
+    pnlCartao: TPanel;
+    ShapeCartao: TShape;
+    Panel20: TPanel;
+    Panel21: TPanel;
+    Image2: TImage;
+    Panel22: TPanel;
+    pnlPix: TPanel;
+    ShapePix: TShape;
+    Panel24: TPanel;
+    Panel25: TPanel;
+    Image3: TImage;
+    Panel26: TPanel;
+    pnlContainerPg: TPanel;
+    Panel32: TPanel;
+    Shape6: TShape;
+    buttonDinheiro: TAdvGlowButton;
+
+    procedure Panel29Click(Sender: TObject);
+    procedure buttonDinheiroClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCaixaPagamento: TFormCaixaPagamento;
+
+implementation
+
+{$R *.dfm}
+
+uses UFormPagamentoDinheiro, uBiblioteca;
+
+procedure TFormCaixaPagamento.buttonDinheiroClick(Sender: TObject);
+var
+  lFrame: TFormPagamentoDInheiro;
+begin
+  lFrame:= TFormPagamentoDInheiro.Create(Self);
+  lFrame.Align := alClient;
+
+  lFrame.Parent := pnlContainerPg;
+
+lFrame.show;
+ lFrame.edtRecbidos.setFocus;
+end;
+
+
+procedure TFormCaixaPagamento.Panel29Click(Sender: TObject);
+begin
+    ShowForm(TFormPagamentoDInheiro,FormPagamentoDInheiro);
+end;
+
+end.

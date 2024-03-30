@@ -1,0 +1,46 @@
+unit UFormAdicionarProduto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.ExtCtrls, Vcl.Grids,
+  Vcl.DBGrids;
+
+type
+  TFormAdicionarProduto = class(TForm)
+    DBGrid1: TDBGrid;
+    Panel1: TPanel;
+    tbl_itensGrid: TFDQuery;
+    qry_consultaProduto: TFDQuery;
+    DSitensGrid: TDataSource;
+    tbl_itensGridID_PRODUTO: TIntegerField;
+    tbl_itensGridDESCRICAO: TWideStringField;
+    tbl_itensGridQTD: TSingleField;
+    tbl_itensGridV_UNITARIO: TSingleField;
+    tbl_itensGridSub_total: TFloatField;
+    procedure tbl_itensGridCalcFields(DataSet: TDataSet);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormAdicionarProduto: TFormAdicionarProduto;
+
+implementation
+
+{$R *.dfm}
+
+uses uDmDados;
+
+procedure TFormAdicionarProduto.tbl_itensGridCalcFields(DataSet: TDataSet);
+begin
+        tbl_itensGridSub_total.AsFloat:=  tbl_itensGridQTD.AsFloat * tbl_itensGridV_UNITARIO.AsFloat;
+end;
+
+end.

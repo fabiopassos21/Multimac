@@ -92,4 +92,18 @@ object Lookup: TLookup
     Left = 176
     Top = 176
   end
+  object FDNatureza: TFDQuery
+    Active = True
+    Connection = dmDados.fdCon
+    Transaction = fdTransaction
+    SQL.Strings = (
+      'SELECT * FROM natureza_operacao')
+    Left = 344
+    Top = 264
+  end
+  object DSNATUREZA: TDataSource
+    DataSet = FDNatureza
+    Left = 344
+    Top = 224
+  end
 end

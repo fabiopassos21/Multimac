@@ -53,21 +53,23 @@ type
     Label12: TLabel;
     DBEdit11: TDBEdit;
     fdQryCadastroID_CIDADE: TIntegerField;
-    DBLookupComboBox2: TDBLookupComboBox;
-    Label13: TLabel;
-    Label14: TLabel;
     fdQryCadastroID_ESTADO: TIntegerField;
     fdQryCadastroCEP: TIntegerField;
     BuscarCEP: TButton;
     edCEP: TEdit;
     ACBrCEP1: TACBrCEP;
-    DBLookupComboBox1: TDBLookupComboBox;
     DBEdit2: TDBEdit;
     Label15: TLabel;
     Label16: TLabel;
     Button1: TButton;
     frxReport1: TfrxReport;
     frxUserDataSet1: TfrxUserDataSet;
+    fdQryCadastroCIDADE: TWideStringField;
+    fdQryCadastroESTADO: TWideStringField;
+    Label17: TLabel;
+    DBEdit12: TDBEdit;
+    Label14: TLabel;
+    DBEdit13: TDBEdit;
     procedure FormShow(Sender: TObject);
     procedure fdQryCadastroBeforeInsert(DataSet: TDataSet);
     procedure fdQryCadastroBeforeEdit(DataSet: TDataSet);
@@ -93,7 +95,7 @@ implementation
 procedure TFormCadastroCliente.ACBrCEP1BuscaEfetuada(Sender: TObject);
 var
   I : Integer ;
-  Logradouro,bairro,municipio,uf:string;
+  Logradouro,bairro,municipio,cidade,uf:string;
 begin
   if ACBrCEP1.Enderecos.Count < 1 then
 
@@ -106,8 +108,9 @@ begin
        with ACBrCEP1.Enderecos[I] do
        begin
 
-          DBEdit7.Text:=Logradouro;
-
+          DBEdit8.Text:=Logradouro;
+          DBEdit12.text:=municipio;
+          DBEDIT13.text:=uf;
           DBEdit9.Text:=Bairro;
 
 

@@ -28,9 +28,14 @@ uses
   uFormDadosAvançados in 'Forms\uFormDadosAvançados.pas' {FormDadosAvancados},
   uFormPreProprio in 'Forms\uFormPreProprio.pas' {FormPreProprio},
   uFormCertificado in 'Forms\uFormCertificado.pas' {FormCertificado},
-  uFormCaixa in 'Forms\uFormCaixa.pas' {FormCaixa},
   UFormFiltroVendaNFE in 'Forms\UFormFiltroVendaNFE.pas' {FormFiltroVendaNFE},
-  UFormAbertura in 'Forms\UFormAbertura.pas' {FormAberturaCaixa};
+  UFormAbertura in 'Forms\UFormAbertura.pas' {FormAberturaCaixa},
+  uFormCadastroCFOP in 'Forms\uFormCadastroCFOP.pas' {FormCadastroCFOP},
+  uFormPreCadastroCFOP in 'Forms\uFormPreCadastroCFOP.pas' {FormPreCadastroCFOP},
+  uFormCaixaPDV in 'Forms\uFormCaixaPDV.pas' {FormCaixaPDV},
+  uFormPagamento in 'Forms\uFormPagamento.pas' {FormCaixaPagamento},
+  UFormPagamentoDinheiro in 'Forms\UFormPagamentoDinheiro.pas' {FormPagamentoDInheiro},
+  UFormCaixaIdentificarCliente in 'Forms\UFormCaixaIdentificarCliente.pas' {FormCaixaIdentificarCliente};
 
 {$R *.res}
 
@@ -40,5 +45,6 @@ begin
   Application.CreateForm(TdmDados, dmDados);
   Application.CreateForm(TFormMain, FormMain);
   Application.CreateForm(TLookup, Lookup);
-  APPlication.Run;
+  Application.CreateForm(TFormCaixaIdentificarCliente, FormCaixaIdentificarCliente);
+  Application.Run;
 end.

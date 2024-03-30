@@ -1,0 +1,251 @@
+object FormCadastroCFOP: TFormCadastroCFOP
+  Left = 0
+  Top = 0
+  Caption = 'FormCadastroCFOP'
+  ClientHeight = 247
+  ClientWidth = 967
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 967
+    Height = 247
+    Margins.Left = 0
+    Margins.Bottom = 30
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 5
+    ExplicitWidth = 924
+    ExplicitHeight = 239
+    object Label1: TLabel
+      AlignWithMargins = True
+      Left = 231
+      Top = 67
+      Width = 64
+      Height = 176
+      Margins.Left = 5
+      Margins.Top = 10
+      Align = alLeft
+      Caption = 'CFOP'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -24
+      Font.Name = 'Verdana'
+      Font.Style = []
+      ParentFont = False
+      ExplicitLeft = 240
+      ExplicitTop = 63
+      ExplicitHeight = 29
+    end
+    object Panel2: TPanel
+      Left = 1
+      Top = 1
+      Width = 965
+      Height = 56
+      Align = alTop
+      TabOrder = 0
+      ExplicitLeft = 0
+      ExplicitTop = 8
+      object LinkLabel1: TLinkLabel
+        AlignWithMargins = True
+        Left = 4
+        Top = 4
+        Width = 418
+        Height = 48
+        Align = alLeft
+        BevelOuter = bvNone
+        Caption = 'Cadastro de Opera'#231#227'o'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -35
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        ExplicitLeft = 23
+        ExplicitTop = 0
+        ExplicitHeight = 96
+      end
+    end
+    object CurvyPanel2: TCurvyPanel
+      AlignWithMargins = True
+      Left = 11
+      Top = 67
+      Width = 200
+      Height = 149
+      Margins.Left = 10
+      Margins.Top = 10
+      Margins.Right = 15
+      Margins.Bottom = 30
+      Align = alLeft
+      Caption = ''
+      Color = clBtnFace
+      TabOrder = 1
+      ExplicitTop = 140
+      object Radio_cupom: TRadioButton
+        AlignWithMargins = True
+        Left = 5
+        Top = 86
+        Width = 190
+        Height = 17
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        Align = alTop
+        Caption = 'Venda Cupom'
+        TabOrder = 0
+        ExplicitLeft = 48
+        ExplicitTop = 56
+        ExplicitWidth = 113
+      end
+      object Radio_Entrada: TRadioButton
+        AlignWithMargins = True
+        Left = 5
+        Top = 32
+        Width = 190
+        Height = 17
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        Align = alTop
+        Caption = 'Entrada'
+        TabOrder = 1
+        ExplicitLeft = 3
+        ExplicitTop = 12
+        ExplicitWidth = 113
+      end
+      object Radio_devolucao: TRadioButton
+        AlignWithMargins = True
+        Left = 5
+        Top = 59
+        Width = 190
+        Height = 17
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        Align = alTop
+        Caption = 'Devolucao'
+        TabOrder = 2
+        ExplicitLeft = 11
+        ExplicitTop = 20
+        ExplicitWidth = 113
+      end
+      object Radio_Venda: TRadioButton
+        AlignWithMargins = True
+        Left = 5
+        Top = 5
+        Width = 190
+        Height = 17
+        Margins.Left = 5
+        Margins.Top = 5
+        Margins.Right = 5
+        Margins.Bottom = 5
+        Align = alTop
+        Caption = 'Venda'
+        TabOrder = 3
+        ExplicitLeft = 19
+        ExplicitTop = 28
+        ExplicitWidth = 113
+      end
+    end
+    object DBEdit1: TDBEdit
+      Left = 229
+      Top = 100
+      Width = 124
+      Height = 27
+      DataField = 'CFOP'
+      DataSource = DSCFOP
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Button1: TButton
+      Left = 229
+      Top = 133
+      Width = 124
+      Height = 29
+      Caption = 'Gravar'
+      TabOrder = 3
+      OnClick = Button1Click
+    end
+  end
+  object FDQueryNatureza: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'SELECT * FROM NATUREZA_OPERACAO')
+    Left = 808
+    Top = 104
+    object FDQueryNaturezaID_OPERACAO: TIntegerField
+      FieldName = 'ID_OPERACAO'
+      Origin = 'ID_OPERACAO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQueryNaturezaDESCRICAO: TWideStringField
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+    end
+  end
+  object DSNATUREZA: TDataSource
+    DataSet = FDQueryNatureza
+    Left = 808
+    Top = 152
+  end
+  object fdqueryCFOP: TFDQuery
+    Active = True
+    Connection = dmDados.fdCon
+    Transaction = FDTransaction1
+    UpdateOptions.AssignedValues = [uvFetchGeneratorsPoint, uvGeneratorName]
+    UpdateOptions.FetchGeneratorsPoint = gpImmediate
+    UpdateOptions.GeneratorName = 'GEN_CADASTRO_CFOP_ID'
+    UpdateOptions.AutoIncFields = 'ID_CFOP'
+    SQL.Strings = (
+      'select * from cfop')
+    Left = 520
+    Top = 88
+    object fdqueryCFOPID_CFOP: TIntegerField
+      AutoGenerateValue = arAutoInc
+      FieldName = 'ID_CFOP'
+      Origin = 'ID_CFOP'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object fdqueryCFOPCFOP: TWideStringField
+      FieldName = 'CFOP'
+      Origin = 'CFOP'
+    end
+    object fdqueryCFOPNATUREZA: TIntegerField
+      FieldName = 'NATUREZA'
+      Origin = 'NATUREZA'
+    end
+    object fdqueryCFOPTIPO: TWideStringField
+      FieldName = 'TIPO'
+      Origin = 'TIPO'
+    end
+  end
+  object DSCFOP: TDataSource
+    DataSet = fdqueryCFOP
+    Left = 696
+    Top = 152
+  end
+  object FDTransaction1: TFDTransaction
+    Connection = dmDados.fdCon
+    Left = 536
+    Top = 128
+  end
+end

@@ -61,14 +61,22 @@ type
     DSCertificado: TDataSource;
     Label16: TLabel;
     Label17: TLabel;
-    Label18: TLabel;
-    Label19: TLabel;
     Panel3: TPanel;
     fdproprio: TFDQuery;
     nfe: TACBrNFe;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
+    FDQueryNFE_DADOS: TFDQuery;
+    DataSource1: TDataSource;
+    FDQueryNFE_DADOSSERIE: TIntegerField;
+    FDQueryNFE_DADOSNUMERO_NOTA: TIntegerField;
+    Label20: TLabel;
+    DBEdit16: TDBEdit;
+    Label21: TLabel;
+    DBEdit17: TDBEdit;
+    Label22: TLabel;
+    FDTransaction1: TFDTransaction;
+    Button4: TButton;
+    DBEdit19: TDBEdit;
+    Button5: TButton;
     procedure BuscarCEPClick(Sender: TObject);
     procedure ACBrCEP1BuscaEfetuada(Sender: TObject);
     procedure Button1Click(Sender: TObject);
@@ -77,6 +85,8 @@ type
     procedure gravarCertificado;
     procedure FormCreate(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
 
 
 
@@ -100,7 +110,7 @@ implementation
 {$R *.dfm}
 
 uses uDmDados, uFormDadosAvançados, uBiblioteca,
-  System.SysUtils, uFormCertificado;
+  System.SysUtils, uFormCertificado, uFormPreCadastroCFOP;
 
 procedure TFormProprio.ACBrCEP1BuscaEfetuada(Sender: TObject);
 
@@ -154,6 +164,13 @@ end;
 
 procedure TFormProprio.Button1Click(Sender: TObject);
 begin
+if FDQueryNFE_DADOS.State in [dsInsert,dsEdit] then
+begin
+  FDTransaction1.StartTransaction;
+  FDQueryNFE_DADOS.Post;
+  FDTransaction1.CommitRetaining;
+end;
+
 if FDProprio.State in [dsEdit,dsInsert]   then
 begin
 DBEdit13.Text:='1052';
@@ -164,18 +181,7 @@ FDProprio.Post;
 FDTransactionProprio.CommitRetaining;
 ShowMessage('Salvo com Sucesso');
 end;
- try
-  if not FDCertificado.IsEmpty then
-  begin
 
-    FDCertificado.Edit;
-    FDCertificado.FieldByName('SERIE').AsString := certificadoDig;
-    FDCertificado.Post;
-    ShowMessage('Certificado Gerado Com sucesso');
-  end;
-finally
-  FDCertificado.Close;
-end;
  end;
 
 
@@ -186,6 +192,8 @@ FDProprio.Open();
 fdproprio.FetchAll;
 FDCertificado.Open;
 fdcertificado.Fetchall;
+FDQueryNFE_DADOS.Open();
+FDQueryNFE_DADOS.FetchAll;
 end;
 procedure TFormProprio.Button3Click(Sender: TObject);
 begin
@@ -261,9 +269,10 @@ begin
      certificadoDig:=formcertificado.StringGrid1.Cells[0, formcertificado.StringGrid1.Row];
      credenciadoraDig:=formcertificado.StringGrid1.Cells[4, formcertificado.StringGrid1.Row];
      vencimentoDig:=formcertificado.StringGrid1.Cells[3, formcertificado.StringGrid1.Row];
-     edit1.Text:=certificadoDig;
-     edit3.Text:=vencimentoDig;
-     edit2.Text:=credenciadoraDig;
+
+     dbedit19.Text:=certificadoDig;
+     
+
      ShowMessage('Deu certo');
 
   END
@@ -291,7 +300,21 @@ formcertificado.Free;
 end;
 end;
 
-procedure TFormProprio.DBEdit7Enter(Sender: TObject);
+procedure TFormProprio.Button4Click(Sender: TObject);
+begin
+showform(TFormPreCadastroCFOP,FormPreCadastroCFOP);
+self.Close;
+end;
+
+Procedure TFormProprio.Button5Click(Sender: TObject);
+begin
+FDTransaction2.StartTransaction;
+FDCertificado.Post;
+FDTransaction2.Commit;
+showmessage('Deu certo');
+end;
+
+Procedure TFormProprio.DBEdit7Enter(Sender: TObject);
 begin
   DBEdit7.SelStart := Length(DBEdit7.Text);
 end;
@@ -299,16 +322,17 @@ end;
 procedure TFormProprio.FormCreate(Sender: TObject);
 begin
 FDCertificado.Open();
-FDCertificado.Fetchall;
+
 end;
 
 procedure TFormProprio.gravarCertificado;
 begin
-
-FDTransaction2.StartTransaction;
-FDCertificado.Post;
-FDTransaction2.CommitRetaining;
-
+if FDCertificado.State in  [dsInsert, dsEdit]  then
+begin
+  FDTransaction2.StartTransaction;
+  FDCertificado.Post;
+  FDTransaction2.CommitRetaining;
+end;
 end;
 
 end.

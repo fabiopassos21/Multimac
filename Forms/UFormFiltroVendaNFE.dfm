@@ -30,7 +30,7 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
       Left = 1
       Top = 1
       Width = 1047
-      Height = 33
+      Height = 30
       Align = alTop
       Alignment = taCenter
       Caption = 'Venda Danfe NFE'
@@ -40,6 +40,7 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
       Font.Name = '@Malgun Gothic'
       Font.Style = []
       ParentFont = False
+      ExplicitWidth = 167
     end
     inherited edtFiltro: TEdit
       Top = 77
@@ -57,9 +58,11 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
     end
     inherited Panel2: TPanel
       Left = 957
-      Top = 34
-      Height = 70
+      Top = 31
+      Height = 73
       ExplicitLeft = 957
+      ExplicitTop = 31
+      ExplicitHeight = 73
       inherited Button1: TButton
         Left = 64
         Top = 36
@@ -73,7 +76,7 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
         Left = 10
         Top = 5
         Width = 71
-        Height = 60
+        Height = 63
         Margins.Left = 10
         Margins.Top = 5
         Margins.Right = 10
@@ -136,8 +139,6 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
         Appearance.GradientChecked = ggVertical
         Appearance.TextColorDisabled = 13948116
         UIStyle = tsWhidbey
-        ExplicitTop = 10
-        ExplicitHeight = 79
       end
     end
     object Button2: TButton
@@ -221,9 +222,6 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
     Align = alClient
     PopupMenu = PopupMenu1
     TabOrder = 1
-    ExplicitLeft = 8
-    ExplicitTop = 131
-    ExplicitHeight = 498
   end
   object PopupMenu1: TPopupMenu
     Left = 440
@@ -290,7 +288,7 @@ inherited FormFiltroVendaNFE: TFormFiltroVendaNFE
     EspessuraBorda = 1
     BorderIcon = [biSystemMenu, biMinimize, biMaximize]
     ThreadSafe = False
-    Left = 875
-    Top = 230
+    Left = 907
+    Top = 262
   end
 end

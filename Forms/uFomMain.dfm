@@ -1,9 +1,9 @@
 object FormMain: TFormMain
   Left = 250
   Top = 200
-  BorderStyle = bsSingle
-  ClientHeight = 1071
-  ClientWidth = 1910
+  BorderStyle = bsNone
+  ClientHeight = 1100
+  ClientWidth = 1916
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -32,8 +32,8 @@ object FormMain: TFormMain
   object fp: TImage
     Left = 0
     Top = 121
-    Width = 1910
-    Height = 913
+    Width = 1916
+    Height = 942
     Align = alClient
     Picture.Data = {
       0A544A504547496D6167654A360000FFD8FFE000104A46494600010101004800
@@ -472,26 +472,12 @@ object FormMain: TFormMain
       23A6C41A9ABA2C1A085481E50F0E88D298A3C511B1AD162BA087816821651AD1
       1A9A0F22CF86A8D1D16A48E9A8F0235A45C79A2351914FFFD9}
     Stretch = True
-    ExplicitLeft = 2
-  end
-  object TimePicker1: TTimePicker
-    Left = 1384
-    Top = 1030
-    Width = 42
-    Height = 21
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Segoe UI'
-    Font.Style = []
-    TabOrder = 6
-    Time = 45358.505626122690000000
-    TimeFormat = 'hh:mm'
+    ExplicitLeft = 8
   end
   object AdvPanel2: TAdvPanel
     Left = 0
-    Top = 1034
-    Width = 1910
+    Top = 1063
+    Width = 1916
     Height = 37
     Align = alBottom
     BorderStyle = bsSingle
@@ -529,8 +515,6 @@ object FormMain: TFormMain
     StatusBar.Color = clWhite
     StatusBar.GradientDirection = gdVertical
     Text = ''
-    ExplicitTop = 1024
-    ExplicitWidth = 1900
     FullHeight = 200
     object Label1: TLabel
       Left = 261
@@ -559,7 +543,6 @@ object FormMain: TFormMain
       Font.Style = []
       ParentFont = False
       TabOrder = 0
-      ExplicitLeft = 691
       ExplicitHeight = 4
     end
     object LinkLabel2: TLinkLabel
@@ -607,7 +590,6 @@ object FormMain: TFormMain
       Font.Style = []
       ParentFont = False
       TabOrder = 3
-      ExplicitLeft = 691
       ExplicitHeight = 4
     end
     object LinkLabel5: TLinkLabel
@@ -628,7 +610,6 @@ object FormMain: TFormMain
       Font.Style = []
       ParentFont = False
       TabOrder = 4
-      ExplicitLeft = 583
       ExplicitHeight = 29
     end
   end
@@ -645,12 +626,12 @@ object FormMain: TFormMain
   object AdvPanel1: TAdvPanel
     Left = 0
     Top = 0
-    Width = 1910
+    Width = 1916
     Height = 121
     Align = alTop
     BorderStyle = bsSingle
     Color = clWhite
-    TabOrder = 3
+    TabOrder = 2
     UseDockManager = True
     Version = '2.6.3.4'
     BackgroundPosition = bpStretched
@@ -683,12 +664,10 @@ object FormMain: TFormMain
     StatusBar.Color = clWhite
     StatusBar.GradientDirection = gdVertical
     Text = ''
-    ExplicitLeft = 8
-    ExplicitTop = -6
     FullHeight = 200
     object CAIXA: TAdvGlowButton
       AlignWithMargins = True
-      Left = 1765
+      Left = 1771
       Top = 21
       Width = 125
       Height = 85
@@ -790,9 +769,6 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 1726
-      ExplicitTop = 22
-      ExplicitHeight = 96
     end
     object AdvGlowButton1: TAdvGlowButton
       AlignWithMargins = True
@@ -882,13 +858,10 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 28
-      ExplicitTop = 44
-      ExplicitHeight = 93
     end
     object AdvGlowButton2: TAdvGlowButton
       AlignWithMargins = True
-      Left = 1465
+      Left = 1471
       Top = 21
       Width = 125
       Height = 85
@@ -960,13 +933,10 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 1370
-      ExplicitTop = 12
-      ExplicitHeight = 146
     end
     object AdvGlowButton3: TAdvGlowButton
       AlignWithMargins = True
-      Left = 911
+      Left = 1061
       Top = 21
       Width = 125
       Height = 85
@@ -1077,9 +1047,6 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 912
-      ExplicitTop = 22
-      ExplicitHeight = 96
     end
     object AdvGlowButton4: TAdvGlowButton
       AlignWithMargins = True
@@ -1180,13 +1147,10 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 162
-      ExplicitTop = 19
-      ExplicitHeight = 96
     end
     object AdvGlowButton5: TAdvGlowButton
       AlignWithMargins = True
-      Left = 1615
+      Left = 1621
       Top = 21
       Width = 125
       Height = 85
@@ -1264,9 +1228,6 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 1548
-      ExplicitTop = 12
-      ExplicitHeight = 146
     end
     object AdvGlowButton6: TAdvGlowButton
       AlignWithMargins = True
@@ -1367,9 +1328,6 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 1014
-      ExplicitTop = 22
-      ExplicitHeight = 96
     end
     object AdvGlowButton7: TAdvGlowButton
       AlignWithMargins = True
@@ -1455,9 +1413,6 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 836
-      ExplicitTop = 12
-      ExplicitHeight = 146
     end
     object AdvGlowButton8: TAdvGlowButton
       AlignWithMargins = True
@@ -1553,9 +1508,6 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 312
-      ExplicitTop = 22
-      ExplicitHeight = 96
     end
     object AdvGlowButton9: TAdvGlowButton
       AlignWithMargins = True
@@ -1643,9 +1595,120 @@ object FormMain: TFormMain
       Appearance.TextColorDisabled = 13948116
       Layout = blGlyphTop
       UIStyle = tsWhidbey
-      ExplicitLeft = 658
-      ExplicitTop = 12
-      ExplicitHeight = 146
+    end
+    object AdvGlowButton10: TAdvGlowButton
+      AlignWithMargins = True
+      Left = 911
+      Top = 21
+      Width = 125
+      Height = 85
+      Margins.Left = 10
+      Margins.Top = 20
+      Margins.Right = 15
+      Margins.Bottom = 10
+      Align = alLeft
+      Caption = 'Cliente'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      NotesFont.Charset = DEFAULT_CHARSET
+      NotesFont.Color = clWindowText
+      NotesFont.Height = -11
+      NotesFont.Name = 'Tahoma'
+      NotesFont.Style = []
+      ParentFont = False
+      Picture.Data = {
+        89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+        DE000000097048597300000B1300000B1301009A9C180000065D49444154789C
+        ED5B696C155514C618718D7FDC1397448DFE31FEA9223F34AF33EFCD4253A22D
+        144BEB165A402D2EA150DA5241056BFDC3262680B46A29858056A0D804BA09B4
+        DA4DA458C0CA52AC96964211831B09F47ABE29934CEFBCF66D33EF52E8979C74
+        32BDCBF9CEDC7BEEB9E7DE3766CC28461135A8AAE7614D91725445AA5515B99B
+        FE9E1F10E3B95655A56C5D971E12ADA7E3D07D9EF19A22D76BAACC82943A5595
+        C789D63B62783C9E5B3455FA9C08F58740DE947E1A119F298A72B3681E614196
+        E5BB88444B18C47969465BA2F98404FA6A77D2973FCA93D1352FCB9AF306DB52
+        B68EB5EDAF673D5D870CC133DECDCD9C6594E1EB918F38A2EB4FDF219A575048
+        4A4ABA9694AEE649CC9CF90A6B6AA86267FB3A8695C6EF2BD98CE92FFB318254
+        89B645F30B08F2F2EFF1CAE7E566B2DE9E5F0292370565E7E764DA8DA0CA0B44
+        F31B169AF6CC3DA4E43F56A5B3E7BDCDCE9C3A1A34795350273BEB2D7E14FC7D
+        59FB0322BFDCAAF0D4E449ECB7E33F854CDE94CE8EFD2CF9F9447E242C11CDD3
+        2F92C68FBF115FC8AAECD6B292B0C99B52B6B9983380F4172DAF3788E66B83EE
+        93E2AC8AA6A624B1D3278F446C00B4919A3299F3055E5D345F1B286859695572
+        C5B28288C99BB26C69FEE051A0C82B44F3B5810CB0C7AAE4B735E58E19A0B66A
+        2BEF071A44F3B581BECA61AB92ED079B1C3340FBC146DE0F9C14CDD7063827AB
+        92274FFCEC9801D016B71C9E17CDD70652EC9C5B0640B8CC19E03FD17C6DB8EA
+        A700EF046BABB73966809AAA2D97BF137475195C32781944C4299AAF0D8A224F
+        702B104A993A69F008F0C56AA2F9DAE02F14C61E3F52037CB5F98B91110A0334
+        0D9659954DC666A8E32AD90C0171719EBBF951802D6D5F6FE8530175E6CD7DD3
+        F6F52FEBED30A029D2BB7C2203C98D53DDED419347D9DC9CD9F6FCA022BD239A
+        5F40206D455EBA8A571E69AE86EF760624DF585FC9D2D35FF4477EE788488901
+        48602291C99340C273CEEC0CF6F597C5ACADB58E75FF7EC8103CE35DE66CFF49
+        5104592326296AC2EBF5DE16E261885F219FD2842CB3683E6101871A64844222
+        71310CE2176955591B1F1F7F93681E1103C75C4468770806D8E5F3799E10ADB7
+        E3A069F12019631E39B41AF21127B0AB83D0F2D6A5E12C4191B35046B49EA318
+        C528DC035606CC735D971F272F1F03C133DE5D111EDFC4A588701C492639BC62
+        22BA979CDDD9C02B8074166507EAC899BAEE7D72044580FAF5BA222790E2A5C1
+        910D566014B994E43932C658D13C6D88F7786E27E5DE27457B9C233DA4317A70
+        028D3E45F3C6301F4BC4E7D35AFE6728241213E2D90BA9538C3B03103CE35DA8
+        A30217AE848D0845F13C46C45B875332794AA27137A0A8F063B6ABA69C1D3FB6
+        2FE06E106550167550176D0C6B0845DE075DA24A5ED3BCB143CDF1498913D98A
+        E505ACA5A986FD71FA58C42931B4D1DC586D24591313260E3D1A48A7A890C729
+        F040F83A5889A4C9CFB20D259F8694F808557AA9EDD29235465F7E0CF1AFEBA7
+        C63E9FEF7E9A777D7CE7F98BF35857E701D788F382BE3E5894E7673A487DAAAA
+        DEE79A01B089B1763841F7B14D1B8BA2469C974D1B0A0D1D384354BB421E111B
+        6F7191E44DD94846E0F542F0E4B801C8DB16593BC1E527D1E44DB1658F15B9D0
+        790370171FEB765708276ECA9E5D15830C807CA4E306E03D7F349D5E20E9EA6C
+        E30CE0C2F1397FE0114C50132DE938F223EF07CE396F0055DA6FEDA462FB26E1
+        C44DF966DB465B74E8B801A8D10FAD9D4C4F7FC991D3DF48E554CF61969E36F8
+        2085F627F98E1B202E4E7A80A6C1056B471F152C7424DC0D57D07741FE427EFE
+        5F80AE8E1B00A00E56F36BEEE245B9C65710F1E5D137AF0F4DD555AE900790B2
+        220B1FE03BC510C486255AE49B1BAA58DA34FBF9212D7F6DAEA7D5344D7A9442
+        E24E5BF4A579D9C205596C6F4BAD6BC47F68AE650BF2B2FC9F1FAAD2AF13BCDE
+        475C256F021B0E7F23C1948CD7D2D8FA75AB8DDB5D9192461BEB8B57B3D75F9D
+        36644E00BAE8BAE7DEA89037A1EBFAAD0839874C5458B6C9B824B166D55256B9
+        A3CC182158B711BCC08941F08C77F81FCAA02CEA0CB1EDE5E7FC5AE81255F256
+        18C911456A0CA4A80BD2A0FB623DC28873B80637B7C8096D0FE7243858319661
+        452A571449459FA249FBC5A59FCDCCC28D0EFEFE707862B4B183A65B06EE2089
+        E61712626262AEC3AF46699ECE20A37C726984B4E2AA2B3D9FD1067E50D93FF0
+        8C7752AB51469556A28EA2C43E853644F318C5958CFF01FABAC8789A8901A700
+        00000049454E44AE426082}
+      Rounded = True
+      TabOrder = 10
+      OnClick = AdvGlowButton10Click
+      Appearance.BorderColor = 10070188
+      Appearance.BorderColorHot = 10079963
+      Appearance.BorderColorDown = 4548219
+      Appearance.BorderColorChecked = 13744549
+      Appearance.Color = clWhite
+      Appearance.ColorTo = 14675440
+      Appearance.ColorChecked = 11918331
+      Appearance.ColorCheckedTo = 7915518
+      Appearance.ColorDisabled = 15921906
+      Appearance.ColorDisabledTo = 15921906
+      Appearance.ColorDown = 7778289
+      Appearance.ColorDownTo = 4296947
+      Appearance.ColorHot = 15465983
+      Appearance.ColorHotTo = 11332863
+      Appearance.ColorMirror = 14675440
+      Appearance.ColorMirrorTo = 14675440
+      Appearance.ColorMirrorHot = 5888767
+      Appearance.ColorMirrorHotTo = 10807807
+      Appearance.ColorMirrorDown = 946929
+      Appearance.ColorMirrorDownTo = 5021693
+      Appearance.ColorMirrorChecked = 10480637
+      Appearance.ColorMirrorCheckedTo = 5682430
+      Appearance.ColorMirrorDisabled = 11974326
+      Appearance.ColorMirrorDisabledTo = 15921906
+      Appearance.GradientHot = ggVertical
+      Appearance.GradientMirrorHot = ggVertical
+      Appearance.GradientDown = ggVertical
+      Appearance.GradientMirrorDown = ggVertical
+      Appearance.GradientChecked = ggVertical
+      Appearance.TextColorDisabled = 13948116
+      Layout = blGlyphTop
+      UIStyle = tsWhidbey
     end
   end
   object AdvOfficeStatusBarOfficeStyler1: TAdvOfficeStatusBarOfficeStyler
@@ -1986,12 +2049,11 @@ object FormMain: TFormMain
     Top = 272
   end
   object FDQRYProprio: TFDQuery
-    Active = True
     Connection = dmDados.fdCon
     SQL.Strings = (
       'select * from proprio')
-    Left = 696
-    Top = 376
+    Left = 664
+    Top = 360
     object FDQRYProprioCNPJ_CPF: TWideStringField
       FieldName = 'CNPJ_CPF'
       Origin = 'CNPJ_CPF'

@@ -1,0 +1,203 @@
+object FormAdicionarProduto: TFormAdicionarProduto
+  Left = 0
+  Top = 0
+  Caption = 'FormAdicionarProduto'
+  ClientHeight = 277
+  ClientWidth = 804
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid: TDBGrid
+    Left = 0
+    Top = 82
+    Width = 804
+    Height = 195
+    Align = alBottom
+    Color = clWhite
+    DataSource = DSitensGrid
+    DrawingStyle = gdsGradient
+    GradientEndColor = clMoneyGreen
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgEditing, dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -24
+    TitleFont.Name = 'Verdana'
+    TitleFont.Style = []
+    OnColExit = DBGridColExit
+    OnDrawColumnCell = DBGridDrawColumnCell
+    OnKeyDown = DBGridKeyDown
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID_PRODUTO'
+        Title.Caption = 'Codigo'
+        Width = 108
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCRICAO'
+        Width = 233
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'QTD'
+        Width = 83
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'V_UNITARIO'
+        Width = 198
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Sub_total'
+        Width = 136
+        Visible = True
+      end>
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 804
+    Height = 82
+    Align = alClient
+    BevelOuter = bvNone
+    Caption = 'Listar Produtos e ADICIONAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    ExplicitLeft = 528
+    ExplicitTop = 56
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+  end
+  object tbl_itensGrid: TFDQuery
+    OnCalcFields = tbl_itensGridCalcFields
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'select * from produto')
+    Left = 768
+    Top = 56
+    object tbl_itensGridID_PRODUTO: TIntegerField
+      FieldName = 'ID_PRODUTO'
+      Origin = 'ID_PRODUTO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object tbl_itensGridDESCRICAO: TWideStringField
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      Size = 80
+    end
+    object tbl_itensGridQTD: TSingleField
+      FieldName = 'QTD'
+      Origin = 'QTD'
+    end
+    object tbl_itensGridV_UNITARIO: TSingleField
+      FieldName = 'V_UNITARIO'
+      Origin = 'V_UNITARIO'
+    end
+    object tbl_itensGridSub_total: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'Sub_total'
+      Calculated = True
+    end
+  end
+  object qry_consultaProduto: TFDQuery
+    Connection = dmDados.fdCon
+    SQL.Strings = (
+      'select * from produto')
+    Left = 632
+    Top = 184
+    object qry_consultaProdutoID_PRODUTO: TIntegerField
+      FieldName = 'ID_PRODUTO'
+      Origin = 'ID_PRODUTO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qry_consultaProdutoDESCRICAO: TWideStringField
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      Size = 80
+    end
+    object qry_consultaProdutoQTD: TSingleField
+      FieldName = 'QTD'
+      Origin = 'QTD'
+    end
+    object qry_consultaProdutoCUSTO: TSingleField
+      FieldName = 'CUSTO'
+      Origin = 'CUSTO'
+    end
+    object qry_consultaProdutoV_UNITARIO: TSingleField
+      FieldName = 'V_UNITARIO'
+      Origin = 'V_UNITARIO'
+    end
+    object qry_consultaProdutoUNIDADE: TWideStringField
+      FieldName = 'UNIDADE'
+      Origin = 'UNIDADE'
+      Size = 4
+    end
+    object qry_consultaProdutoPESO_LIQUIDO: TSingleField
+      FieldName = 'PESO_LIQUIDO'
+      Origin = 'PESO_LIQUIDO'
+    end
+    object qry_consultaProdutoPESO_BRUTO: TSingleField
+      FieldName = 'PESO_BRUTO'
+      Origin = 'PESO_BRUTO'
+    end
+    object qry_consultaProdutoFABRICANTE: TWideStringField
+      FieldName = 'FABRICANTE'
+      Origin = 'FABRICANTE'
+      Size = 60
+    end
+    object qry_consultaProdutoMARCA_MODELO: TWideStringField
+      FieldName = 'MARCA_MODELO'
+      Origin = 'MARCA_MODELO'
+      Size = 255
+    end
+    object qry_consultaProdutoID_FORNECEDOR: TIntegerField
+      FieldName = 'ID_FORNECEDOR'
+      Origin = 'ID_FORNECEDOR'
+    end
+    object qry_consultaProdutoDT_EXCLUIDO: TDateField
+      FieldName = 'DT_EXCLUIDO'
+      Origin = 'DT_EXCLUIDO'
+    end
+    object qry_consultaProdutoCODIGO_AUX: TWideStringField
+      FieldName = 'CODIGO_AUX'
+      Origin = 'CODIGO_AUX'
+      Size = 13
+    end
+    object qry_consultaProdutoNCM: TWideStringField
+      FieldName = 'NCM'
+      Origin = 'NCM'
+      Size = 13
+    end
+  end
+  object DSitensGrid: TDataSource
+    DataSet = tbl_itensGrid
+    Left = 824
+    Top = 184
+  end
+end
